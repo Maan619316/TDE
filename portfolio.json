@@ -1,0 +1,472 @@
+[
+  {
+    "title": "Branding 1",
+    "type": "video",
+    "url": "assets/Videos/BD1.mp4",
+    "category": "ads"
+  },
+  {
+    "title": "Branding 2",
+    "type": "video",
+    "url": "assets/Videos/BD2.mp4",
+    "category": "ads"
+  },
+  {
+    "title": "Branding 3",
+    "type": "video",
+    "url": "assets/Videos/BD3.mp4",
+    "category": "ads"
+  },
+  {
+    "title": "Branding 4",
+    "type": "video",
+    "url": "assets/Videos/BD4.mp4",
+    "category": "ads"
+  },
+  {
+    "title": "Branding 5",
+    "type": "video",
+    "url": "assets/Videos/BD5.mp4",
+    "category": "ads"
+  },
+  {
+    "title": "Illustration 1",
+    "type": "video",
+    "url": "assets/Videos/ILL1.mp4",
+    "category": "illustration"
+  },
+  {
+    "title": "Illustration 2",
+    "type": "video",
+    "url": "assets/Videos/ILL2.mp4",
+    "category": "illustration"
+  },
+  {
+    "title": "Illustration 3",
+    "type": "video",
+    "url": "assets/Videos/ILL3.mp4",
+    "category": "illustration"
+  },
+
+  {
+    "title": "Branding 1",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS1.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 2",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS2.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 3",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS3.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 4",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS4.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 5",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS5.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 6",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS6.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 7",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS7.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 8",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS8.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 9",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS9.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 10",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS10.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 11",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS11.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 12",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS12.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 13",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS13.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 14",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS14.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 15",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS15.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 16",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS16.jpg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 17",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS17.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 18",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS18.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 19",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS19.png",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 20",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS20.jpeg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 21",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS21.jpeg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 22",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS22.jpeg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 23",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS23.jpeg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 24",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS24.jpeg",
+    "category": "branding"
+  },
+  {
+    "title": "Branding 25",
+    "type": "image",
+    "url": "assets/img/projects/Branding/BS25.jpeg",
+    "category": "branding"
+  },
+
+  {
+    "title": "Illustration 1",
+    "type": "image",
+    "url": "assets/img/projects/Illustration/Ill1.jpg",
+    "category": "illustration"
+  },
+  {
+    "title": "Illustration 2",
+    "type": "image",
+    "url": "assets/img/projects/Illustration/Ill2.jpg",
+    "category": "illustration"
+  },
+  {
+    "title": "Illustration 3",
+    "type": "image",
+    "url": "assets/img/projects/Illustration/Ill3.jpg",
+    "category": "illustration"
+  },
+  {
+    "title": "Packaging 1",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD1.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 2",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD2.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 3",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD3.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 4",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD4.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 5",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD5.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 6",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD6.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 7",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD7.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 8",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD8.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 9",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD9.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 10",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD10.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Packaging 11",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/PD11.jpg",
+    "category": "packaging"
+  },
+  {
+    "title": "Standee 1",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST1.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 2",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST2.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 3",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST3.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 4",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST4.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 5",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST5.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 6",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST6.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 7",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST7.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 8",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST8.png",
+    "category": "standee"
+  },
+  {
+    "title": "Standee 9",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST9.png",
+    "category": "standee"
+  },
+  {
+    "title": "Thumbnail 1",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH1.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 2",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH2.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 3",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH3.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 4",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH4.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 5",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH5.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 6",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH6.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 7",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH7.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 8",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH8.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 9",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH9.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 10",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH10.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 11",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH11.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 12",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH12.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 13",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH13.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 14",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH14.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 15",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH15.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 16",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH16.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 17",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH17.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 18",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH18.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "Thumbnail 19",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH19.png",
+    "category": "thumbnails"
+  },
+  {
+    "title": "UiUx 1",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI1.png",
+    "category": "uiux"
+  },
+  {
+    "title": "UiUx 2",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI2.png",
+    "category": "uiux"
+  },
+  {
+    "title": "UiUx 3",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI3.png",
+    "category": "uiux"
+  }
+]
