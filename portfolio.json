@@ -284,9 +284,9 @@
     "category": "packaging"
   },
   {
-    "title": "Standee 1",
+    "title": "Standee 10",
     "type": "image",
-    "url": "assets/img/projects/Standee/ST1.png",
+    "url": "assets/img/projects/Standee/ST10.png",
     "category": "standee"
   },
   {
@@ -468,5 +468,251 @@
     "type": "image",
     "url": "assets/img/projects/UiUx/UI3.png",
     "category": "uiux"
+  },
+  {
+    "title": "UiUx 4",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI4.jpg",
+    "category": "uiux"
+  },
+  {
+    "title": "UiUx 5",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI5.jpg",
+    "category": "uiux"
+  },
+  {
+    "title": "UiUx 6",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI6.jpg",
+    "category": "uiux"
+  },
+  {
+    "title": "UiUx 7",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI7.jpg",
+    "category": "uiux"
+  },
+  {
+    "title": "Software 1",
+    "type": "image",
+    "url": "assets/img/projects/Software/soft1.jpg",
+    "category": "soft"
+  },
+  {
+    "title": "Software 2",
+    "type": "image",
+    "url": "assets/img/projects/Software/soft2.jpg",
+    "category": "soft"
+  },
+  {
+    "title": "Software 3",
+    "type": "image",
+    "url": "assets/img/projects/Software/soft3.jpg",
+    "category": "soft"
+  },
+  {
+    "title": "Web 1",
+    "type": "image",
+    "url": "assets/img/projects/Web/web1.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 2",
+    "type": "image",
+    "url": "assets/img/projects/Web/web2.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 3",
+    "type": "image",
+    "url": "assets/img/projects/Web/web3.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 4",
+    "type": "image",
+    "url": "assets/img/projects/Web/web4.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 5",
+    "type": "image",
+    "url": "assets/img/projects/Web/web5.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 6",
+    "type": "image",
+    "url": "assets/img/projects/Web/web6.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 7",
+    "type": "image",
+    "url": "assets/img/projects/Web/web7.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 8",
+    "type": "image",
+    "url": "assets/img/projects/Web/web8.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Web 9",
+    "type": "image",
+    "url": "assets/img/projects/Web/web9.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Logo 1",
+    "type": "image",
+    "url": "assets/img/projects/Logo/1.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 2",
+    "type": "image",
+    "url": "assets/img/projects/Logo/2.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 3",
+    "type": "image",
+    "url": "assets/img/projects/Logo/3.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 4",
+    "type": "image",
+    "url": "assets/img/projects/Logo/4.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 5",
+    "type": "image",
+    "url": "assets/img/projects/Logo/5.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 6",
+    "type": "image",
+    "url": "assets/img/projects/Logo/6.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 7",
+    "type": "image",
+    "url": "assets/img/projects/Logo/7.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 8",
+    "type": "image",
+    "url": "assets/img/projects/Logo/8.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 9",
+    "type": "image",
+    "url": "assets/img/projects/Logo/9.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 10",
+    "type": "image",
+    "url": "assets/img/projects/Logo/10.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 11",
+    "type": "image",
+    "url": "assets/img/projects/Logo/11.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 12",
+    "type": "image",
+    "url": "assets/img/projects/Logo/12.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 13",
+    "type": "image",
+    "url": "assets/img/projects/Logo/13.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 14",
+    "type": "image",
+    "url": "assets/img/projects/Logo/14.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 15",
+    "type": "image",
+    "url": "assets/img/projects/Logo/15.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 16",
+    "type": "image",
+    "url": "assets/img/projects/Logo/16.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 17",
+    "type": "image",
+    "url": "assets/img/projects/Logo/17.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 18",
+    "type": "image",
+    "url": "assets/img/projects/Logo/18.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 19",
+    "type": "image",
+    "url": "assets/img/projects/Logo/19.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 20",
+    "type": "image",
+    "url": "assets/img/projects/Logo/20.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 21",
+    "type": "image",
+    "url": "assets/img/projects/Logo/21.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 22",
+    "type": "image",
+    "url": "assets/img/projects/Logo/22.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 23",
+    "type": "image",
+    "url": "assets/img/projects/Logo/23.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 24",
+    "type": "image",
+    "url": "assets/img/projects/Logo/24.jpg",
+    "category": "logo"
+  },
+  {
+    "title": "Logo 25",
+    "type": "image",
+    "url": "assets/img/projects/Logo/25.jpg",
+    "category": "logo"
   }
 ]

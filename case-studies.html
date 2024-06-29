@@ -166,85 +166,99 @@
         </div>
       </section>
       <!-- breadcrumb area end -->
+<div class="filter-buttons">
+  <button onclick="filterProjects('all')" data-category="all">All</button>
+  <button onclick="filterProjects('soft')" data-category="soft">Software Development</button>
+  <button onclick="filterProjects('web')" data-category="web">Web Development</button>
+  <button onclick="filterProjects('ads')" data-category="ads">Advertisements</button>
+  <button onclick="filterProjects('branding')" data-category="branding">Branding Stationery</button>
+  <button onclick="filterProjects('illustration')" data-category="illustration">Illustration</button>
+  <button onclick="filterProjects('packaging')" data-category="packaging">Packaging Design</button>
+  <button onclick="filterProjects('standee')" data-category="standee">Standee</button>
+  <button onclick="filterProjects('thumbnails')" data-category="thumbnails">Thumbnails</button>
+  <button onclick="filterProjects('uiux')" data-category="uiux">UI/UX Designs</button>
+  <button onclick="filterProjects('logo')" data-category="logo">Logo Design</button>
 
-      <div class="filter-buttons">
-        <button onclick="filterProjects('all')" data-category="all">All</button>
-         <button onclick="filterProjects('ads')" data-category="ads">Advertisements</button>
-        <button onclick="filterProjects('branding')" data-category="branding">Branding Stationery</button>
-        <button onclick="filterProjects('illustration')" data-category="illustration">Illustration</button>
-        <button onclick="filterProjects('packaging')" data-category="packaging">Packaging Design</button>
-        <button onclick="filterProjects('standee')" data-category="standee">Standee</button>
-        <button onclick="filterProjects('thumbnails')" data-category="thumbnails">Thumbnails</button>
+</div>
 
-      </div>
-      <!-- tp-case-area-start -->
-      <div class="portfolio-container" id="portfolio-container"></div>
+<!-- tp-case-area-start -->
+<div class="portfolio-container" id="portfolio-container"></div>
 
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
-      <script>
-        const portfolioData = 'portfolio.json';
+<script>
+  const portfolioData = 'portfolio.json';
 
-        async function fetchProjects() {
-          const response = await fetch(portfolioData);
-          const projects = await response.json();
-          displayProjects(projects);
-        }
+  async function fetchProjects() {
+    const response = await fetch(portfolioData);
+    const projects = await response.json();
+    displayProjects(projects);
+  }
 
-function displayProjects(projects) {
-  const portfolioContainer = document.getElementById('portfolio-container');
-  portfolioContainer.innerHTML = '';
-  projects.forEach(project => {
-    const projectElement = document.createElement('div');
-    projectElement.className = `portfolio-item ${project.category}`;
-    if (project.type === 'image') {
-      projectElement.innerHTML = `<a class="portfolio-popup" href="${project.url}"><img src="${project.url}" alt="${project.title}" /></a>`;
-    } else if (project.type === 'video') {
-      projectElement.innerHTML = `<a class="portfolio-popup" href="${project.url}"><video controls><source src="${project.url}" type="video/mp4"></video></a>`;
-    }
-    portfolioContainer.appendChild(projectElement);
-  });
+  function displayProjects(projects) {
+    const portfolioContainer = document.getElementById('portfolio-container');
+    portfolioContainer.innerHTML = '';
+    projects.forEach(project => {
+      const projectElement = document.createElement('div');
+      projectElement.className = `portfolio-item ${project.category}`;
+      if (project.type === 'image') {
+        projectElement.innerHTML = `
+          <a class="portfolio-popup" href="${project.url}">
+            <img class="lazyload" data-src="${project.url}" alt="${project.title}" />
+          </a>`;
+      } else if (project.type === 'video') {
+        projectElement.innerHTML = `
+          <a class="portfolio-popup" href="${project.url}">
+            <video controls preload="auto">
+              <source src="${project.url}" type="video/mp4">
+            </video>
+          </a>`;
+      }
+      portfolioContainer.appendChild(projectElement);
+    });
 
-  // Initialize Magnific Popup for portfolio items
-  $('.portfolio-popup').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-}
+    // Initialize Magnific Popup for portfolio items
+    $('.portfolio-popup').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      },
+      delegate: 'a'
+    });
+  }
 
+  function filterProjects(category) {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
 
-function filterProjects(category) {
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
-  const filterButtons = document.querySelectorAll('.filter-buttons button');
-  
-  portfolioItems.forEach(item => {
-    if (category === 'all') {
-      item.style.display = 'block';
-    } else if (item.classList.contains(category)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
+    portfolioItems.forEach(item => {
+      if (category === 'all') {
+        item.style.display = 'block';
+      } else if (item.classList.contains(category)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
 
-  // Remove 'selected' class from all buttons
-  filterButtons.forEach(button => {
-    button.classList.remove('selected');
-  });
+    // Remove 'selected' class from all buttons
+    filterButtons.forEach(button => {
+      button.classList.remove('selected');
+    });
 
-  // Add 'selected' class to the clicked button
-  const selectedButton = document.querySelector(`.filter-buttons button[data-category="${category}"]`);
-  selectedButton.classList.add('selected');
-}
+    // Add 'selected' class to the clicked button
+    const selectedButton = document.querySelector(`.filter-buttons button[data-category="${category}"]`);
+    selectedButton.classList.add('selected');
+  }
 
+  fetchProjects();
+</script>
+<!-- tp-case-area-end -->
 
-
-        fetchProjects();
-      </script>
-      <!-- tp-case-area-end -->
-    <!-- tp-contact-area-start -->
+<!-- tp-contact-area-start -->
       <div
         class="tp-contact-area grey-bg pb-120 wow tpfadeUp"
         data-wow-duration=".7s"
