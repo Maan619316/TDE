@@ -918,3 +918,23 @@ $(document).ready(function () {
 //       result.innerHTML += "<br>Error sending message";
 //     });
 // });
+
+//pop up
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("close-popup");
+  const bookPackage = document.getElementById("book-package");
+
+  // Show popup on page load
+  popup.style.display = "flex";
+
+  // Close popup when clicking the close button
+  closePopup.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
+
+  // Add event listener for the book package button
+  bookPackage.addEventListener("click", function () {
+    window.location.href = "price.html"; // Redirect to booking page
+  });
+});
