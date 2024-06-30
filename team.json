@@ -48,6 +48,30 @@
     }
   },
   {
+    "name": "Furqan Haider",
+    "role": "Senior Software Engineer",
+    "image": "assets/img/team/team-9.jpg",
+    "link": "about-me.html",
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "youtube": "#",
+      "pinterest": "#"
+    }
+  },
+  {
+    "name": "Muhammad Ellahi",
+    "role": "SEO Specialist",
+    "image": "assets/img/team/team-10.jpg",
+    "link": "about-me.html",
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "youtube": "#",
+      "pinterest": "#"
+    }
+  },
+  {
     "name": "Amina Muhammad",
     "role": "QA Specialest",
     "image": "assets/img/team/team-5.jpg",
