@@ -5433,6 +5433,36 @@ input[type="color"] {
   }
 }
 
+.tp-brand-area {
+  overflow: hidden; /* Hide scrollbar */
+  white-space: nowrap;
+  position: relative;
+}
+
+.brand-slider-active {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.tp-brand-icon img {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /*----------------------------------------*/
 /*  10. blog CSS START
 /*----------------------------------------*/

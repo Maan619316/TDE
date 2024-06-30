@@ -876,20 +876,7 @@ $(document).ready(function () {
                                   }">${member.name}</a></h4>
                                   <span>${member.role}</span>
                               </div>
-                              <div class="tp-team-social">
-                                  <a href="${
-                                    member.social.facebook
-                                  }"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="${
-                                    member.social.twitter
-                                  }"><i class="fab fa-twitter"></i></a>
-                                  <a href="${
-                                    member.social.youtube
-                                  }"><i class="fab fa-youtube"></i></a>
-                                  <a href="${
-                                    member.social.pinterest
-                                  }"><i class="fab fa-pinterest"></i></a>
-                              </div>
+                             
                           </div>
                       </div>
                   `;
