@@ -9163,7 +9163,7 @@ p.checkout-coupon input[type="text"]:focus {
   line-height: 50px;
   position: fixed;
   bottom: -10%;
-  right: 5%;
+  right: 8%;
   font-size: 16px;
   border-radius: 6px;
   z-index: 99;
@@ -9174,9 +9174,19 @@ p.checkout-coupon input[type="text"]:focus {
   transition: 1s ease;
   border: none;
 }
+@media (max-width: 1600px) {
+  .scroll-top {
+    right: 12%;
+  }
+}
+@media (max-width: 1000px) {
+  .scroll-top {
+    right: 17%;
+  }
+}
 @media (max-width: 767px) {
   .scroll-top {
-    right: 30px;
+    right: 50%;
   }
 }
 
