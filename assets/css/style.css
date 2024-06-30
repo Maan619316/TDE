@@ -5306,13 +5306,13 @@ input[type="color"] {
 }
 
 .testimonial-slide-wrapper {
-  margin-left: -140px;
-  margin-right: -140px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 @media only screen and (min-width: 1600px) and (max-width: 1800px) {
   .testimonial-slide-wrapper {
-    margin-left: -120px;
-    margin-right: -120px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -5331,6 +5331,35 @@ input[type="color"] {
 
 .test-img-active .slick-current .tp-testi-bottom {
   border-bottom: 2px solid var(--tp-common-green);
+}
+
+.testimonial-slide-wrapper .tp-testimonial-three {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  vertical-align: top;
+  white-space: normal;
+}
+
+@media only screen and (max-width: 991px) {
+  .testimonial-slide-wrapper .tp-testimonial-three {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-slide-wrapper .tp-testimonial-three {
+    width: 48%;
+    margin: 20px 1%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .testimonial-slide-wrapper .tp-testimonial-three {
+    width: 30%;
+    margin: 20px 1%;
+  }
 }
 
 /*----------------------------------------*/
@@ -9218,5 +9247,3 @@ p.checkout-coupon input[type="text"]:focus {
     flex: 1 0 100%; /* Adjust this to control the number of items per row */
   }
 }
-
-
