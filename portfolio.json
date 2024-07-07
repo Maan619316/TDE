@@ -564,5 +564,41 @@
     "type": "image",
     "url": "assets/img/projects/Web/web9.jpg",
     "category": "web"
+  },
+  {
+    "title": "Social 1",
+    "type": "image",
+    "url": "assets/img/projects/Social/1.png",
+    "category": "social"
+  },
+  {
+    "title": "Social 2",
+    "type": "image",
+    "url": "assets/img/projects/Social/2.png",
+    "category": "social"
+  },
+  {
+    "title": "Social 3",
+    "type": "image",
+    "url": "assets/img/projects/Social/3.png",
+    "category": "social"
+  },
+  {
+    "title": "Social 4",
+    "type": "image",
+    "url": "assets/img/projects/Social/4.png",
+    "category": "social"
+  },
+  {
+    "title": "Social 5",
+    "type": "image",
+    "url": "assets/img/projects/Social/5.png",
+    "category": "social"
+  },
+  {
+    "title": "Social 6",
+    "type": "image",
+    "url": "assets/img/projects/Social/6.jpg",
+    "category": "social"
   }
 ]
