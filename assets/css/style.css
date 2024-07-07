@@ -1647,8 +1647,8 @@ input[type="color"] {
 }
 
 .breadcrumb-height {
-  padding-top: 300px;
-  padding-bottom: 160px;
+  padding-top: 260px;
+  padding-bottom: 80px;
 }
 @media (max-width: 767px) {
   .breadcrumb-height {
@@ -9151,6 +9151,12 @@ p.checkout-coupon input[type="text"]:focus {
   transition: 0.4s;
   z-index: 99;
 }
+
+.line {
+  margin-left: 5%;
+  border: 1px solid green;
+  width: 230px;
+}
 @media (max-width: 767px) {
   .footer-icons {
     font-size: 20px;
@@ -9179,14 +9185,23 @@ p.checkout-coupon input[type="text"]:focus {
     right: 7%;
   }
 }
+
+@media (max-width: 900px) {
+}
 @media (max-width: 1200px) {
   .scroll-top {
     right: 12%;
+  }
+  .line {
+    width: 200px;
   }
 }
 @media (max-width: 767px) {
   .scroll-top {
     right: 50%;
+  }
+  .line {
+    width: 120px;
   }
 }
 
@@ -9248,6 +9263,9 @@ p.checkout-coupon input[type="text"]:focus {
   .portfolio-item {
     margin: 10px;
     flex: 1 0 33%; /* Adjust this to control the number of items per row */
+  }
+  .line {
+    width: 50%;
   }
 }
 
