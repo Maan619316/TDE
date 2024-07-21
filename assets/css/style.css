@@ -9168,7 +9168,7 @@ p.checkout-coupon input[type="text"]:focus {
   line-height: 50px;
   position: fixed;
   bottom: -10%;
-  right: 5%;
+  right: 7%;
   font-size: 16px;
   border-radius: 6px;
   z-index: 99;
@@ -9181,7 +9181,7 @@ p.checkout-coupon input[type="text"]:focus {
 }
 @media (max-width: 1600px) {
   .scroll-top {
-    right: 7%;
+    right: 9%;
   }
 }
 
@@ -9327,6 +9327,12 @@ p.checkout-coupon input[type="text"]:focus {
   max-width: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+@media (max-width: 540px) {
+  .popup-content {
+    width: 80%;
+  }
 }
 
 .close-button {
