@@ -858,28 +858,23 @@ $(document).ready(function () {
     let teamMembersHtml = "";
     $.each(data, function (index, member) {
       teamMembersHtml += `
-                      <div class="col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="${
-                        0.3 + index * 0.2
-                      }s">
-                          <div class="tp-team team-inner text-center">
-                              <div class="tp-team-thumb p-relative">
-                                  <img src="${member.image}" alt="">
-                                  <div class="tp-team-thumb-icon">
-                                      <a href="${
-                                        member.link
-                                      }"><i class="far fa-long-arrow-right"></i></a>
-                                  </div>
-                              </div>
-                              <div class="tp-team-content">
-                                  <h4 class="tp-team-title"><a href="${
-                                    member.link
-                                  }">${member.name}</a></h4>
-                                  <span>${member.role}</span>
-                              </div>
-                             
-                          </div>
-                      </div>
-                  `;
+        <div class="team-member col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="${
+          0.3 + index * 0.2
+        }s">
+          <div class="tp-team team-inner text-center">
+            <div class="tp-team-thumb p-relative">
+              <img src="${member.image}" alt="">
+              <div class="tp-team-thumb-icon">
+               <i class="far fa-long-arrow-right"></i>
+              </div>
+            </div>
+            <div class="tp-team-content">
+              <h4 class="tp-team-title">${member.name}</h4>
+              <span>${member.role}</span>
+            </div>
+          </div>
+        </div>
+      `;
     });
     $("#team-members").html(teamMembersHtml);
   });

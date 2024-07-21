@@ -9355,3 +9355,31 @@ p.checkout-coupon input[type="text"]:focus {
   justify-content: center;
   margin-bottom: 10px;
 }
+.tp-team-area {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  margin-bottom: 50px;
+}
+.team-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.team-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+.team-container {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+.team-row {
+  display: inline-flex;
+}
+.team-member {
+  text-align: center;
+  width: 50px;
+  margin-right: 250px;
+  margin-left: 50px;
+}
+
+.tp-team-content {
+  margin-left: 30px;
+}
