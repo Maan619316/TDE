@@ -58,5 +58,11 @@
     "role": "Junior web Developer",
     "image": "assets/img/team/team-8.jpg",
     "link": "about-me.html"
+  },
+  {
+    "name": "Zain UL Abadin",
+    "role": "Graphic Animator",
+    "image": "assets/img/team/team-11.jpg",
+    "link": "about-me.html"
   }
 ]

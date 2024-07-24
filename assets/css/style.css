@@ -6479,28 +6479,28 @@ blockquote cite::before {
 .tp-social-item.tp-youtube span i {
   color: #ff0000;
 }
-.tp-social-item.tp-behance {
-  border-bottom: 3px solid #1da1f2;
+.tp-social-item.tp-tiktok {
+  border-bottom: 3px solid black;
 }
-.tp-social-item.tp-behance:hover {
-  background-color: #1da1f2;
+.tp-social-item.tp-tiktok:hover {
+  background-color: black;
 }
-.tp-social-item.tp-behance:hover i {
+.tp-social-item.tp-tiktok:hover i {
   color: var(--tp-common-white);
 }
-.tp-social-item.tp-behance span i {
-  color: #1da1f2;
+.tp-social-item.tp-tiktok span i {
+  color: black;
 }
-.tp-social-item.tp-dribble {
+.tp-social-item.tp-instagram {
   border-bottom: 3px solid #ff56bb;
 }
-.tp-social-item.tp-dribble:hover {
+.tp-social-item.tp-instagram:hover {
   background-color: #ff56bb;
 }
-.tp-social-item.tp-dribble:hover i {
+.tp-social-item.tp-instagram:hover i {
   color: var(--tp-common-white);
 }
-.tp-social-item.tp-dribble span i {
+.tp-social-item.tp-instagram span i {
   color: #ff56bb;
 }
 .tp-social-item.tp-twitter {
@@ -9382,4 +9382,7 @@ p.checkout-coupon input[type="text"]:focus {
 
 .tp-team-content {
   margin-left: 30px;
+}
+.tp-testimonial-three__content-text {
+  margin-bottom: 20%;
 }
