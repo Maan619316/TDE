@@ -8465,7 +8465,7 @@ p.checkout-coupon input[type="text"]:focus {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .wrapper-404 {
