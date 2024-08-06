@@ -5442,6 +5442,10 @@ input[type="color"] {
   display: flex;
   animation: scroll 30s linear infinite;
 }
+.team-slider-active {
+  display: flex;
+  animation: scroll 60s linear infinite;
+}
 
 .brand-item {
   flex: 0 0 auto;
