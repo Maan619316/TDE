@@ -9171,8 +9171,8 @@ p.checkout-coupon input[type="text"]:focus {
   height: 50px;
   line-height: 50px;
   position: fixed;
-  bottom: -10%;
-  right: 7%;
+  bottom: -8%;
+  right: 6%;
   font-size: 16px;
   border-radius: 6px;
   z-index: 99;
@@ -9185,7 +9185,7 @@ p.checkout-coupon input[type="text"]:focus {
 }
 @media (max-width: 1600px) {
   .scroll-top {
-    right: 9%;
+    right: 7%;
   }
 }
 
@@ -9193,7 +9193,7 @@ p.checkout-coupon input[type="text"]:focus {
 }
 @media (max-width: 1200px) {
   .scroll-top {
-    right: 12%;
+    right: 10%;
   }
   .line {
     width: 200px;
@@ -9389,4 +9389,22 @@ p.checkout-coupon input[type="text"]:focus {
 }
 .tp-testimonial-three__content-text {
   margin-bottom: 20%;
+}
+
+#whatsapp-floating-button {
+  position: fixed;
+  z-index: 99;
+  bottom: 3%;
+  right: 2%;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#whatsapp-floating-button img {
+  width: 100%;
+  height: 100%;
 }
