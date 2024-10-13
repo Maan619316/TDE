@@ -5442,9 +5442,27 @@ input[type="color"] {
   display: flex;
   animation: scroll 30s linear infinite;
 }
+.team-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-scroll-wrapper {
+  overflow: hidden;
+}
+
 .team-slider-active {
   display: flex;
-  animation: scroll 60s linear infinite;
+  animation: scroll 250s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .brand-item {

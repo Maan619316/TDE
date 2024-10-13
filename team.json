@@ -64,5 +64,23 @@
     "role": "Graphic Animator",
     "image": "assets/img/team/team-11.jpg",
     "link": "about-me.html"
+  },
+  {
+    "name": "Usman Sharjeel",
+    "role": "Software Engineer",
+    "image": "assets/img/team/team-12.jpg",
+    "link": "about-me.html"
+  },
+  {
+    "name": "Hurwa Zafar",
+    "role": "Business Development",
+    "image": "assets/img/team/team-13.jpg",
+    "link": "about-me.html"
+  },
+  {
+    "name": "Tariq Naseeb",
+    "role": "Middle East consultant",
+    "image": "assets/img/team/team-14.jpg",
+    "link": "about-me.html"
   }
 ]

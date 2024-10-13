@@ -865,7 +865,7 @@ $(document).ready(function () {
             <div class="tp-team-thumb p-relative">
               <img src="${member.image}" alt="">
               <div class="tp-team-thumb-icon">
-               <i class="far fa-long-arrow-right"></i>
+                <i class="far fa-long-arrow-right"></i>
               </div>
             </div>
             <div class="tp-team-content">
@@ -876,7 +876,15 @@ $(document).ready(function () {
         </div>
       `;
     });
-    $("#team-members").html(teamMembersHtml);
+
+    // Repeat the team members several times to simulate infinite scroll
+    let repeatCount = 5;
+    let repeatedHtml = "";
+    for (let i = 0; i < repeatCount; i++) {
+      repeatedHtml += teamMembersHtml;
+    }
+
+    $("#team-members").html(repeatedHtml);
   });
 });
 
