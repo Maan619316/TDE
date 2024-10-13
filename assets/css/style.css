@@ -7553,8 +7553,8 @@ p.checkout-coupon input[type="text"]:focus {
 /*  14. team CSS START
 /*----------------------------------------*/
 .tp-team-thumb {
-  height: 285px;
-  width: 285px;
+  height: 185px;
+  width: 185px;
   position: relative;
   display: inline-block;
   border-radius: 50%;
@@ -7563,22 +7563,17 @@ p.checkout-coupon input[type="text"]:focus {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-team-thumb {
-    height: 240px;
-    width: 240px;
+    height: 140px;
+    width: 140px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-team-thumb {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
   }
 }
-@media (max-width: 767px) {
-  .tp-team-thumb {
-    height: 260px;
-    width: 260px;
-  }
-}
+
 .tp-team-thumb-icon {
   position: absolute;
   top: 50%;
@@ -9411,17 +9406,18 @@ p.checkout-coupon input[type="text"]:focus {
   display: none; /* Hide scrollbar for WebKit browsers */
 }
 .team-container {
-  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .team-row {
   display: inline-flex;
 }
 .team-member {
+  margin-top: 50px;
   text-align: center;
-  width: 50px;
-  margin-right: 250px;
-  margin-left: 50px;
+  width: 30px;
+  margin-right: 200px;
+  margin-left: 30px;
 }
 
 .tp-team-content {
