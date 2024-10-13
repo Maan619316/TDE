@@ -415,6 +415,28 @@ input[type="color"] {
   transform: rotate(-0.48deg);
   box-shadow: 0px 9px 14px rgba(89, 86, 233, 0.19);
 }
+.tp-btn-2 {
+  display: inline-block;
+  color: var(--tp-common-white);
+  background: #17f297;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: rotate(-0.48deg);
+  box-shadow: 0px 9px 14px rgba(89, 86, 233, 0.19);
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-btn {
     height: 55px;
