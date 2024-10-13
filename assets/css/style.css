@@ -9395,7 +9395,7 @@ p.checkout-coupon input[type="text"]:focus {
   margin-bottom: 10px;
 }
 .tp-team-area {
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden; 
   margin-bottom: 50px;
 }
 .team-container {
@@ -9403,7 +9403,7 @@ p.checkout-coupon input[type="text"]:focus {
   white-space: nowrap;
 }
 .team-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for WebKit browsers */
+  display: none; 
 }
 .team-container {
   -ms-overflow-style: none;
