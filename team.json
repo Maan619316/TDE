@@ -68,19 +68,19 @@
   {
     "name": "Usman Sharjeel",
     "role": "Software Engineer",
-    "image": "assets/img/team/team-12.jpg",
+    "image": "assets/img/team/team-12.png",
     "link": "about-me.html"
   },
   {
     "name": "Hurwa Zafar",
     "role": "Business Development",
-    "image": "assets/img/team/team-13.jpg",
+    "image": "assets/img/team/team-13.png",
     "link": "about-me.html"
   },
   {
     "name": "Tariq Naseeb",
     "role": "Middle East consultant",
-    "image": "assets/img/team/team-14.jpg",
+    "image": "assets/img/team/team-14.png",
     "link": "about-me.html"
   }
 ]
