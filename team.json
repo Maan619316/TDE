@@ -1,7 +1,7 @@
 [
   {
     "name": "Abdul Muiz",
-    "role": "Senior Graphic Designer",
+    "role": "CEO",
     "image": "assets/img/team/team-4.jpg",
     "link": "about-me.html"
   },
@@ -13,7 +13,7 @@
   },
   {
     "name": "Muhammad Farhan",
-    "role": " Senior Software Engineer",
+    "role": " Team Lead",
     "image": "assets/img/team/team-2.jpg",
     "link": "about-me.html"
   },
@@ -73,7 +73,7 @@
   },
   {
     "name": "Hurwa Zafar",
-    "role": "Business Development",
+    "role": "Business Developer",
     "image": "assets/img/team/team-13.png",
     "link": "about-me.html"
   },
