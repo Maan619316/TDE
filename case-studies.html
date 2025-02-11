@@ -7,30 +7,14 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/66514aa9981b6c56477487b1/1humon9om";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script> -->
-    <!--End of Tawk.to Script-->
-
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="assets/img/favicon.png"
     />
 
-    <!-- CSS here -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/custom-animation.css" />
@@ -48,21 +32,83 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
     />
 
+    <!-- Additional Inline Styles for Cards and Filters -->
+    <style>
+      /* Portfolio container spacing */
+      .portfolio-container {
+        margin-top: 30px;
+      }
+      /* Card styles */
+      .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card-img-top {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+      .card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .card:hover .card-overlay {
+        opacity: 1;
+      }
+      /* Filter button styling */
+      .filter-buttons {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .filter-buttons button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 6px;
+      }
+      .filter-buttons button:hover {
+        background-color: #555;
+      }
+      .filter-buttons button.selected {
+        background-color: #33cc79;
+        color: #000;
+        border-radius: 6px;
+      }
+    </style>
+
+    <!-- Magnific Popup JS (required in head if needed early) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   </head>
 
   <body>
-    <!-- preloader -->
+    <!-- Preloader -->
     <div id="preloader">
       <div class="preloader">
         <span></span>
         <span></span>
       </div>
     </div>
-    <!-- preloader end  -->
+    <!-- End Preloader -->
 
+    <!-- Header Section -->
     <header>
-      <!-- tp-header-area-start -->
       <div
         id="header-sticky"
         class="tp-header-area header-pl-pr header-transparent header-border-bottom"
@@ -102,9 +148,9 @@
               <div class="tp-header-right" style="max-height: 120px">
                 <ul>
                   <li>
-                    <a class="tp-menu-bar" href="javascript:void(0)"
-                      ><i class="fas fa-bars"></i
-                    ></a>
+                    <a class="tp-menu-bar" href="javascript:void(0)">
+                      <i class="fas fa-bars"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -112,10 +158,10 @@
           </div>
         </div>
       </div>
-      <!-- tp-header-area-end -->
     </header>
+    <!-- End Header -->
 
-    <!-- tp-offcanvus-area-start -->
+    <!-- Offcanvas Area -->
     <div class="tp-offcanvas-area">
       <div class="tpoffcanvas">
         <div class="tpoffcanvas__close-btn">
@@ -129,53 +175,41 @@
         <div class="mobile-menu"></div>
         <div class="tpoffcanvas__info">
           <h3 class="offcanva-title">Get In Touch</h3>
-
-          <!-- Email Section -->
           <div class="tp-info-wrapper mb-20">
             <h6 style="color: aliceblue">Email</h6>
-            <a href="mailto:thedigitalenvironmentofficials@gmail.com">
-              thedigitalenvironmentofficials@gmail.com
-            </a>
-            <br />
-            <a href="mailto:tariq.naseeb86@gmail.com">
-              tariq.naseeb86@gmail.com
-            </a>
+            <a href="mailto:thedigitalenvironmentofficials@gmail.com"
+              >thedigitalenvironmentofficials@gmail.com</a
+            ><br />
+            <a href="mailto:tariq.naseeb86@gmail.com"
+              >tariq.naseeb86@gmail.com</a
+            >
           </div>
-
-          <!-- Phone Section -->
           <div class="tp-info-wrapper mb-20">
             <h6 style="color: aliceblue">Phone</h6>
             <span>Pakistan:</span>
-            <a href="tel:+923377236836"> +92 337 723 6836 </a>
-            <br />
+            <a href="tel:+923377236836"> +92 337 723 6836 </a><br />
             <span>UK:</span>
-            <a href="tel:+447774963563">+44 7774 963563</a>
-            <br />
+            <a href="tel:+447774963563">+44 7774 963563</a><br />
             <span>Qatar:</span>
             <a href="tel:+97466259279"> +974 6625 9279 </a><br />
             <span style="padding-left: 12%">
               <a href="tel:+923198058803"> +92 319 805 8803 </a>
             </span>
           </div>
-
-          <!-- Location Section -->
           <div class="tp-info-wrapper mb-20">
             <h6 style="color: aliceblue">Location</h6>
             <span>Pakistan:</span>
-            <a href="https://maps.app.goo.gl/ButXoNK6bwQ4BxtUA" target="_blank">
-              E 11/3 Islamabad, Pakistan
-            </a>
-            <br />
+            <a href="https://maps.app.goo.gl/ButXoNK6bwQ4BxtUA" target="_blank"
+              >E 11/3 Islamabad, Pakistan</a
+            ><br />
             <span>UK:</span>
-            <a href="https://maps.app.goo.gl/8PYh54zUtbwm18v1A" target="_blank">
-              Deli-X 154-156 Deptford High Street London SE83PQ
-            </a>
-            <br />
+            <a href="https://maps.app.goo.gl/8PYh54zUtbwm18v1A" target="_blank"
+              >Deli-X 154-156 Deptford High Street London SE83PQ</a
+            ><br />
             <span>Qatar:</span>
             <a href="#" target="_blank"> Doha, Qatar </a>
           </div>
         </div>
-
         <div class="tpoffcanvas__social">
           <div class="social-icon">
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -187,9 +221,10 @@
       </div>
     </div>
     <div class="body-overlay"></div>
-    <!-- tp-offcanvus-area-end -->
+    <!-- End Offcanvas Area -->
 
     <main>
+      <!-- WhatsApp Floating Button -->
       <a
         href="https://wa.me/447774963563"
         target="_blank"
@@ -201,7 +236,7 @@
           style="width: 50px; height: 50px"
         />
       </a>
-      <!-- breadcrumb area start -->
+      <!-- Breadcrumb Area -->
       <section class="breadcrumb__area breadcrumb-height include-bg p-relative">
         <div class="container">
           <div class="row">
@@ -216,61 +251,45 @@
           </div>
         </div>
       </section>
-      <!-- breadcrumb area end -->
+      <!-- End Breadcrumb Area -->
+
+      <!-- Modified Filter Buttons (default "All" is selected) -->
       <div class="filter-buttons">
-        <button onclick="filterProjects('all')" data-category="all">All</button>
-        <button onclick="filterProjects('soft')" data-category="soft">
+        <button
+          onclick="filterProjects('all')"
+          data-category="all"
+          class="selected"
+        >
+          All
+        </button>
+        <button onclick="filterProjects('software')" data-category="software">
           Software Development
         </button>
-        <button onclick="filterProjects('web')" data-category="web">
-          Web Development
-        </button>
-        <button onclick="filterProjects('ads')" data-category="ads">
-          Advertisements
-        </button>
-        <button onclick="filterProjects('branding')" data-category="branding">
-          Branding Stationery
-        </button>
-        <button
-          onclick="filterProjects('illustration')"
-          data-category="illustration"
-        >
-          Illustration
-        </button>
-        <button onclick="filterProjects('packaging')" data-category="packaging">
-          Packaging Design
-        </button>
-        <button onclick="filterProjects('standee')" data-category="standee">
-          Standee
-        </button>
-        <button
-          onclick="filterProjects('thumbnails')"
-          data-category="thumbnails"
-        >
-          Thumbnails
-        </button>
         <button onclick="filterProjects('uiux')" data-category="uiux">
-          UI/UX Designs
+          UI/UX Designing
         </button>
-        <button onclick="filterProjects('social')" data-category="social">
-          Social Media
+        <button onclick="filterProjects('graphic')" data-category="graphic">
+          Graphic Designing
+        </button>
+        <button onclick="filterProjects('motion')" data-category="motion">
+          Motion Graphics
         </button>
       </div>
 
-      <!-- tp-case-area-start -->
-      <div class="portfolio-container" id="portfolio-container"></div>
+      <!-- Portfolio Container inside a Bootstrap grid -->
+      <div class="container">
+        <div class="row portfolio-container" id="portfolio-container"></div>
+      </div>
 
+      <!-- jQuery, lazySizes and Magnific Popup scripts -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"
         async
       ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-      />
 
+      <!-- Main Script -->
       <script>
         const portfolioData = "portfolio.json";
 
@@ -286,25 +305,42 @@
           );
           portfolioContainer.innerHTML = "";
           projects.forEach((project) => {
-            const projectElement = document.createElement("div");
-            projectElement.className = `portfolio-item ${project.category}`;
+            // Create a Bootstrap column for each project
+            const col = document.createElement("div");
+            col.className = `col-lg-4 col-md-6 portfolio-item ${project.category} mb-4`;
+
+            // Build the card with an overlay that shows the project title.
+            let cardContent = "";
             if (project.type === "image") {
-              projectElement.innerHTML = `
-          <a class="portfolio-popup" href="${project.url}">
-            <img class="lazyload" data-src="${project.url}" alt="${project.title}" />
-          </a>`;
+              cardContent = `
+                <div class="card">
+                  <a class="portfolio-popup" href="${project.url}">
+                    <img class="card-img-top lazyload" data-src="${project.url}" alt="${project.title}" />
+                    <div class="card-overlay">
+                      <div class="card-title">${project.title}</div>
+                    </div>
+                  </a>
+                </div>
+              `;
             } else if (project.type === "video") {
-              projectElement.innerHTML = `
-          <a class="portfolio-popup" href="${project.url}">
-            <video controls preload="auto">
-              <source src="${project.url}" type="video/mp4">
-            </video>
-          </a>`;
+              cardContent = `
+                <div class="card">
+                  <a class="portfolio-popup" href="${project.url}">
+                    <video controls preload="auto" class="card-img-top">
+                      <source src="${project.url}" type="video/mp4">
+                    </video>
+                    <div class="card-overlay">
+                      <div class="card-title">${project.title}</div>
+                    </div>
+                  </a>
+                </div>
+              `;
             }
-            portfolioContainer.appendChild(projectElement);
+            col.innerHTML = cardContent;
+            portfolioContainer.appendChild(col);
           });
 
-          // Initialize Magnific Popup for portfolio items
+          // Initialize Magnific Popup
           $(".portfolio-popup").magnificPopup({
             type: "image",
             gallery: {
@@ -321,82 +357,32 @@
           );
 
           portfolioItems.forEach((item) => {
-            if (category === "all") {
-              item.style.display = "block";
-            } else if (item.classList.contains(category)) {
+            if (category === "all" || item.classList.contains(category)) {
               item.style.display = "block";
             } else {
               item.style.display = "none";
             }
           });
 
-          // Remove 'selected' class from all buttons
+          // Update active button state
           filterButtons.forEach((button) => {
             button.classList.remove("selected");
           });
-
-          // Add 'selected' class to the clicked button
           const selectedButton = document.querySelector(
             `.filter-buttons button[data-category="${category}"]`
           );
-          selectedButton.classList.add("selected");
+          if (selectedButton) {
+            selectedButton.classList.add("selected");
+          }
         }
 
+        // Initially load projects (all are shown by default)
         fetchProjects();
       </script>
-      <!-- tp-case-area-end -->
-
-      <!-- tp-social-area-start -->
-      <div class="tp-social-area social-space-bottom fix">
-        <div class="container-fluid p-0">
-          <div class="row g-0">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <a target="_blank" href="https://www.facebook.com/tdeofficials">
-                <div class="tp-social-item">
-                  <span><i class="fab fa-facebook-f"></i> Facebook</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <a target="_blank" href="https://www.youtube.com/@tdeofficials">
-                <div class="tp-social-item tp-youtube">
-                  <span><i class="fab fa-youtube"></i> YouTube</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <a target="_blank" href="https://www.tiktok.com/@tdeofficials">
-                <div class="tp-social-item tp-tiktok">
-                  <span><i class="fab fa-tiktok"></i> TikTok</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <a target="_blank" href="https://www.instagram.com/tdeofficials3">
-                <div class="tp-social-item tp-instagram">
-                  <span><i class="fab fa-instagram"></i> Instagram</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/tdeofficials/"
-              >
-                <div class="tp-social-item tp-linkedin">
-                  <span><i class="fab fa-linkedin"></i> LinkedIn</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- tp-social-area-end -->
     </main>
 
+    <!-- Footer Section -->
     <footer>
-      <!-- tp-footer-area-start -->
       <div
         class="tp-footer-area footer-bg pt-130"
         data-background="assets/img/footer/footer-bg.jpg"
@@ -422,7 +408,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Email Us Section -->
             <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
               <div class="tp-footer-widget z-index-3">
@@ -432,20 +417,19 @@
                 <div class="tp-footer-widget__list">
                   <ul class="footer-contact">
                     <li>
-                      <a href="mailto:thedigitalenvironmentofficials@gmail.com">
-                        thedigitalenvironmentofficials@gmail.com
-                      </a>
+                      <a href="mailto:thedigitalenvironmentofficials@gmail.com"
+                        >thedigitalenvironmentofficials@gmail.com</a
+                      >
                     </li>
                     <li>
-                      <a href="mailto:tariq.naseeb86@gmail.com">
-                        tariq.naseeb86@gmail.com
-                      </a>
+                      <a href="mailto:tariq.naseeb86@gmail.com"
+                        >tariq.naseeb86@gmail.com</a
+                      >
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-
             <!-- Contact Us Section -->
             <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
               <div class="tp-footer-widget z-index-3">
@@ -473,8 +457,7 @@
                 </div>
               </div>
             </div>
-
-            <!-- Address Section -->
+            <!-- Addresses Section -->
             <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
               <div class="tp-footer-widget z-index-3">
                 <div class="tp-footer-widget__title">
@@ -487,18 +470,16 @@
                       <a
                         href="https://maps.app.goo.gl/ButXoNK6bwQ4BxtUA"
                         target="_blank"
+                        >E 11/3 Islamabad, Pakistan</a
                       >
-                        E 11/3 Islamabad, Pakistan
-                      </a>
                     </li>
                     <li>
                       UK :
                       <a
                         href="https://maps.app.goo.gl/8PYh54zUtbwm18v1A"
                         target="_blank"
+                        >Deli-X 154-156 Deptford High Street London SE83PQ</a
                       >
-                        Deli-X 154-156 Deptford High Street London SE83PQ
-                      </a>
                     </li>
                     <li>
                       Qatar :
@@ -557,14 +538,14 @@
           </div>
         </div>
       </div>
-      <!-- tp-footer-area-end -->
+      <!-- End Footer Area -->
 
       <button class="scroll-top scroll-to-target" data-target="html">
         <i class="far fa-angle-double-up"></i>
       </button>
     </footer>
 
-    <!-- JS here -->
+    <!-- JS Files -->
     <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.js"></script>

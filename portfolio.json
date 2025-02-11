@@ -1,604 +1,434 @@
 [
   {
-    "title": "Branding 1",
-    "type": "video",
-    "url": "assets/Videos/BD1.mp4",
-    "category": "ads"
-  },
-  {
-    "title": "Branding 2",
-    "type": "video",
-    "url": "assets/Videos/BD2.mp4",
-    "category": "ads"
-  },
-  {
-    "title": "Branding 3",
-    "type": "video",
-    "url": "assets/Videos/BD3.mp4",
-    "category": "ads"
-  },
-  {
-    "title": "Branding 4",
-    "type": "video",
-    "url": "assets/Videos/BD4.mp4",
-    "category": "ads"
-  },
-  {
-    "title": "Branding 5",
-    "type": "video",
-    "url": "assets/Videos/BD5.mp4",
-    "category": "ads"
-  },
-  {
-    "title": "Illustration 1",
-    "type": "video",
-    "url": "assets/Videos/ILL1.mp4",
-    "category": "illustration"
-  },
-  {
-    "title": "Illustration 2",
-    "type": "video",
-    "url": "assets/Videos/ILL2.mp4",
-    "category": "illustration"
-  },
-  {
-    "title": "Illustration 3",
-    "type": "video",
-    "url": "assets/Videos/ILL3.mp4",
-    "category": "illustration"
-  },
-
-  {
-    "title": "Branding 1",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS1.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 2",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS2.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 3",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS3.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 4",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS4.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 5",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS5.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 6",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS6.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 7",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS7.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 8",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS8.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 9",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS9.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 10",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS10.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 11",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS11.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 12",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS12.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 13",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS13.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 14",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS14.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 15",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS15.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 16",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS16.jpg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 17",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS17.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 18",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS18.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 19",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS19.png",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 20",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS20.jpeg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 21",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS21.jpeg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 22",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS22.jpeg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 23",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS23.jpeg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 24",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS24.jpeg",
-    "category": "branding"
-  },
-  {
-    "title": "Branding 25",
-    "type": "image",
-    "url": "assets/img/projects/Branding/BS25.jpeg",
-    "category": "branding"
-  },
-
-  {
-    "title": "Illustration 1",
-    "type": "image",
-    "url": "assets/img/projects/Illustration/Ill1.jpg",
-    "category": "illustration"
-  },
-  {
-    "title": "Illustration 2",
-    "type": "image",
-    "url": "assets/img/projects/Illustration/Ill2.jpg",
-    "category": "illustration"
-  },
-  {
-    "title": "Illustration 3",
-    "type": "image",
-    "url": "assets/img/projects/Illustration/Ill3.jpg",
-    "category": "illustration"
-  },
-  {
-    "title": "Packaging 1",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD1.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 2",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD2.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 3",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD3.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 4",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD4.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 5",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD5.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 6",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD6.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 7",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD7.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 8",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD8.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 9",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD9.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 10",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD10.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Packaging 11",
-    "type": "image",
-    "url": "assets/img/projects/Packaging/PD11.jpg",
-    "category": "packaging"
-  },
-  {
-    "title": "Standee 10",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST10.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 2",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST2.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 3",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST3.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 4",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST4.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 5",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST5.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 6",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST6.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 7",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST7.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 8",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST8.png",
-    "category": "standee"
-  },
-  {
-    "title": "Standee 9",
-    "type": "image",
-    "url": "assets/img/projects/Standee/ST9.png",
-    "category": "standee"
-  },
-  {
-    "title": "Thumbnail 1",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH1.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 2",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH2.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 3",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH3.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 4",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH4.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 5",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH5.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 6",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH6.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 7",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH7.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 8",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH8.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 9",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH9.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 10",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH10.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 11",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH11.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 12",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH12.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 13",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH13.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 14",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH14.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 15",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH15.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 16",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH16.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 17",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH17.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 18",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH18.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "Thumbnail 19",
-    "type": "image",
-    "url": "assets/img/projects/Thumbnails/TH19.png",
-    "category": "thumbnails"
-  },
-  {
-    "title": "UiUx 1",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI1.png",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 2",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI2.png",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 3",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI3.png",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 4",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI4.jpg",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 5",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI5.jpg",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 6",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI6.jpg",
-    "category": "uiux"
-  },
-  {
-    "title": "UiUx 7",
-    "type": "image",
-    "url": "assets/img/projects/UiUx/UI7.jpg",
-    "category": "uiux"
-  },
-  {
     "title": "Software 1",
     "type": "image",
     "url": "assets/img/projects/Software/soft1.jpg",
-    "category": "soft"
+    "category": "software"
   },
   {
     "title": "Software 2",
     "type": "image",
     "url": "assets/img/projects/Software/soft2.jpg",
-    "category": "soft"
+    "category": "software"
   },
   {
     "title": "Software 3",
     "type": "image",
     "url": "assets/img/projects/Software/soft3.jpg",
-    "category": "soft"
+    "category": "software"
+  },
+  {
+    "title": "UI/UX 1",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/1.webp",
+    "category": "uiux"
+  },
+  {
+    "title": "UI/UX 2",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI2.webp",
+    "category": "uiux"
+  },
+  {
+    "title": "UI/UX 3",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI3.webp",
+    "category": "uiux"
   },
   {
     "title": "Web 1",
     "type": "image",
-    "url": "assets/img/projects/Web/web1.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web1.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 2",
     "type": "image",
-    "url": "assets/img/projects/Web/web2.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web2.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 3",
     "type": "image",
-    "url": "assets/img/projects/Web/web3.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web3.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 4",
     "type": "image",
-    "url": "assets/img/projects/Web/web4.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web4.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 5",
     "type": "image",
-    "url": "assets/img/projects/Web/web5.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web5.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 6",
     "type": "image",
-    "url": "assets/img/projects/Web/web6.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web6.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 7",
     "type": "image",
-    "url": "assets/img/projects/Web/web7.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web7.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 8",
     "type": "image",
-    "url": "assets/img/projects/Web/web8.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web8.webp",
+    "category": "graphic"
   },
   {
     "title": "Web 9",
     "type": "image",
-    "url": "assets/img/projects/Web/web9.jpg",
-    "category": "web"
+    "url": "assets/img/projects/Web/web9.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 10",
+    "type": "image",
+    "url": "assets/img/projects/Web/web10.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 11",
+    "type": "image",
+    "url": "assets/img/projects/Web/web11.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 12",
+    "type": "image",
+    "url": "assets/img/projects/Web/web12.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 13",
+    "type": "image",
+    "url": "assets/img/projects/Web/web13.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 14",
+    "type": "image",
+    "url": "assets/img/projects/Web/web14.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 15",
+    "type": "image",
+    "url": "assets/img/projects/Web/web15.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 16",
+    "type": "image",
+    "url": "assets/img/projects/Web/web16.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "UI/UX 4",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI4.webp",
+    "category": "uiux"
+  },
+  {
+    "title": "UI/UX 5",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI5.webp",
+    "category": "uiux"
+  },
+  {
+    "title": "UI/UX 6",
+    "type": "image",
+    "url": "assets/img/projects/UiUx/UI6.webp",
+    "category": "uiux"
+  },
+  {
+    "title": "Branding 1",
+    "type": "image",
+    "url": "assets/img/projects/Branding/1.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 2",
+    "type": "image",
+    "url": "assets/img/projects/Branding/2.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 3",
+    "type": "image",
+    "url": "assets/img/projects/Branding/3.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 4",
+    "type": "image",
+    "url": "assets/img/projects/Branding/4.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 5",
+    "type": "image",
+    "url": "assets/img/projects/Branding/5.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 6",
+    "type": "image",
+    "url": "assets/img/projects/Branding/6.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 7",
+    "type": "image",
+    "url": "assets/img/projects/Branding/7.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 8",
+    "type": "image",
+    "url": "assets/img/projects/Branding/8.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 9",
+    "type": "image",
+    "url": "assets/img/projects/Branding/9.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 10",
+    "type": "image",
+    "url": "assets/img/projects/Branding/10.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 11",
+    "type": "image",
+    "url": "assets/img/projects/Branding/11.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 12",
+    "type": "image",
+    "url": "assets/img/projects/Branding/12.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 13",
+    "type": "image",
+    "url": "assets/img/projects/Branding/13.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 14",
+    "type": "image",
+    "url": "assets/img/projects/Branding/14.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 15",
+    "type": "image",
+    "url": "assets/img/projects/Branding/15.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 16",
+    "type": "image",
+    "url": "assets/img/projects/Branding/16.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 17",
+    "type": "image",
+    "url": "assets/img/projects/Branding/17.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 18",
+    "type": "image",
+    "url": "assets/img/projects/Branding/18.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 19",
+    "type": "image",
+    "url": "assets/img/projects/Branding/19.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 20",
+    "type": "image",
+    "url": "assets/img/projects/Branding/20.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 21",
+    "type": "image",
+    "url": "assets/img/projects/Branding/21.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 22",
+    "type": "image",
+    "url": "assets/img/projects/Branding/22.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 23",
+    "type": "image",
+    "url": "assets/img/projects/Branding/23.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 24",
+    "type": "image",
+    "url": "assets/img/projects/Branding/24.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Branding 25",
+    "type": "image",
+    "url": "assets/img/projects/Branding/25.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 1",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/1.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 2",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/2.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 3",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/3.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 4",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/4.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 5",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/5.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 6",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/6.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 7",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/7.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 8",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/8.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 9",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/9.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 10",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/10.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Packaging 11",
+    "type": "image",
+    "url": "assets/img/projects/Packaging/11.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Illustration 1",
+    "type": "image",
+    "url": "assets/img/projects/Illustration/Ill1.jpg",
+    "category": "graphic"
+  },
+  {
+    "title": "Standee 1",
+    "type": "image",
+    "url": "assets/img/projects/Standee/ST1.png",
+    "category": "graphic"
+  },
+  {
+    "title": "Thumbnail 1",
+    "type": "image",
+    "url": "assets/img/projects/Thumbnails/TH1.png",
+    "category": "graphic"
   },
   {
     "title": "Social 1",
     "type": "image",
-    "url": "assets/img/projects/Social/1.png",
-    "category": "social"
+    "url": "assets/img/projects/Social/1.webp",
+    "category": "graphic"
   },
   {
     "title": "Social 2",
     "type": "image",
-    "url": "assets/img/projects/Social/2.png",
-    "category": "social"
+    "url": "assets/img/projects/Social/2.webp",
+    "category": "graphic"
   },
   {
     "title": "Social 3",
     "type": "image",
-    "url": "assets/img/projects/Social/3.png",
-    "category": "social"
+    "url": "assets/img/projects/Social/3.webp",
+    "category": "graphic"
   },
   {
     "title": "Social 4",
     "type": "image",
-    "url": "assets/img/projects/Social/4.png",
-    "category": "social"
+    "url": "assets/img/projects/Social/4.webp",
+    "category": "graphic"
   },
   {
     "title": "Social 5",
     "type": "image",
-    "url": "assets/img/projects/Social/5.png",
-    "category": "social"
+    "url": "assets/img/projects/Social/5.webp",
+    "category": "graphic"
   },
   {
     "title": "Social 6",
     "type": "image",
-    "url": "assets/img/projects/Social/6.jpg",
-    "category": "social"
+    "url": "assets/img/projects/Social/6.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Motion Graphic 1",
+    "type": "video",
+    "url": "assets/Videos/MG1.mp4",
+    "category": "motion"
+  },
+  {
+    "title": "Motion Graphic 2",
+    "type": "video",
+    "url": "assets/Videos/MG2.mp4",
+    "category": "motion"
   }
 ]
