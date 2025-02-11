@@ -18,6 +18,102 @@
     "category": "software"
   },
   {
+    "title": "Web 1",
+    "type": "image",
+    "url": "assets/img/projects/Web/1.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 2",
+    "type": "image",
+    "url": "assets/img/projects/Web/2.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 3",
+    "type": "image",
+    "url": "assets/img/projects/Web/3.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 4",
+    "type": "image",
+    "url": "assets/img/projects/Web/4.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 5",
+    "type": "image",
+    "url": "assets/img/projects/Web/5.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 6",
+    "type": "image",
+    "url": "assets/img/projects/Web/6.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 7",
+    "type": "image",
+    "url": "assets/img/projects/Web/7.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 8",
+    "type": "image",
+    "url": "assets/img/projects/Web/8.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 9",
+    "type": "image",
+    "url": "assets/img/projects/Web/9.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 10",
+    "type": "image",
+    "url": "assets/img/projects/Web/10.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 11",
+    "type": "image",
+    "url": "assets/img/projects/Web/11.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 12",
+    "type": "image",
+    "url": "assets/img/projects/Web/12.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 13",
+    "type": "image",
+    "url": "assets/img/projects/Web/13.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 14",
+    "type": "image",
+    "url": "assets/img/projects/Web/14.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 15",
+    "type": "image",
+    "url": "assets/img/projects/Web/15.webp",
+    "category": "graphic"
+  },
+  {
+    "title": "Web 16",
+    "type": "image",
+    "url": "assets/img/projects/Web/16.webp",
+    "category": "graphic"
+  },
+  {
     "title": "UI/UX 1",
     "type": "image",
     "url": "assets/img/projects/UiUx/1.webp",
@@ -26,127 +122,31 @@
   {
     "title": "UI/UX 2",
     "type": "image",
-    "url": "assets/img/projects/UiUx/UI2.webp",
+    "url": "assets/img/projects/UiUx/2.webp",
     "category": "uiux"
   },
   {
     "title": "UI/UX 3",
     "type": "image",
-    "url": "assets/img/projects/UiUx/UI3.webp",
+    "url": "assets/img/projects/UiUx/3.webp",
     "category": "uiux"
-  },
-  {
-    "title": "Web 1",
-    "type": "image",
-    "url": "assets/img/projects/Web/web1.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 2",
-    "type": "image",
-    "url": "assets/img/projects/Web/web2.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 3",
-    "type": "image",
-    "url": "assets/img/projects/Web/web3.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 4",
-    "type": "image",
-    "url": "assets/img/projects/Web/web4.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 5",
-    "type": "image",
-    "url": "assets/img/projects/Web/web5.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 6",
-    "type": "image",
-    "url": "assets/img/projects/Web/web6.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 7",
-    "type": "image",
-    "url": "assets/img/projects/Web/web7.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 8",
-    "type": "image",
-    "url": "assets/img/projects/Web/web8.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 9",
-    "type": "image",
-    "url": "assets/img/projects/Web/web9.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 10",
-    "type": "image",
-    "url": "assets/img/projects/Web/web10.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 11",
-    "type": "image",
-    "url": "assets/img/projects/Web/web11.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 12",
-    "type": "image",
-    "url": "assets/img/projects/Web/web12.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 13",
-    "type": "image",
-    "url": "assets/img/projects/Web/web13.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 14",
-    "type": "image",
-    "url": "assets/img/projects/Web/web14.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 15",
-    "type": "image",
-    "url": "assets/img/projects/Web/web15.webp",
-    "category": "graphic"
-  },
-  {
-    "title": "Web 16",
-    "type": "image",
-    "url": "assets/img/projects/Web/web16.webp",
-    "category": "graphic"
   },
   {
     "title": "UI/UX 4",
     "type": "image",
-    "url": "assets/img/projects/UiUx/UI4.webp",
+    "url": "assets/img/projects/UiUx/4.webp",
     "category": "uiux"
   },
   {
     "title": "UI/UX 5",
     "type": "image",
-    "url": "assets/img/projects/UiUx/UI5.webp",
+    "url": "assets/img/projects/UiUx/5.webp",
     "category": "uiux"
   },
   {
     "title": "UI/UX 6",
     "type": "image",
-    "url": "assets/img/projects/UiUx/UI6.webp",
+    "url": "assets/img/projects/UiUx/6.webp",
     "category": "uiux"
   },
   {
