@@ -48,8 +48,8 @@
     "link": "about-me.html"
   },
   {
-    "name": "Aisha Umar",
-    "role": "Junior Web Developer",
+    "name": "Asmara Hayat",
+    "role": "Senior Business Developer",
     "image": "assets/img/team/team-7.jpg",
     "link": "about-me.html"
   },
@@ -57,12 +57,6 @@
     "name": "Muhammad Hassan",
     "role": "Junior web Developer",
     "image": "assets/img/team/team-8.jpg",
-    "link": "about-me.html"
-  },
-  {
-    "name": "Zain UL Abadin",
-    "role": "Graphic Animator",
-    "image": "assets/img/team/team-11.jpg",
     "link": "about-me.html"
   },
   {
@@ -87,6 +81,12 @@
     "name": "Mohammad Akram",
     "role": "Middle East consultant",
     "image": "assets/img/team/team-15.png",
+    "link": "about-me.html"
+  },
+  {
+    "name": "Rabi Mushiya",
+    "role": "UK consultant",
+    "image": "assets/img/team/team-16.png",
     "link": "about-me.html"
   }
 ]
