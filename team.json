@@ -1,7 +1,7 @@
 [
   {
     "name": "Abdul Muiz",
-    "role": "CEO",
+    "role": "Chief Executive Officer",
     "image": "assets/img/team/team-4.jpg",
     "link": "about-me.html"
   },
@@ -48,8 +48,14 @@
     "link": "about-me.html"
   },
   {
-    "name": "Aisha Umar",
-    "role": "Junior Web Developer",
+    "name": "Asmara Hayat",
+    "role": "Senior Business Developer",
+    "image": "assets/img/team/team-7.jpg",
+    "link": "about-me.html"
+  },
+  {
+    "name": "Hina Zaman",
+    "role": "Junior UI/UX Designer",
     "image": "assets/img/team/team-7.jpg",
     "link": "about-me.html"
   },
@@ -81,6 +87,12 @@
     "name": "Mohammad Akram",
     "role": "Middle East consultant",
     "image": "assets/img/team/team-15.png",
+    "link": "about-me.html"
+  },
+  {
+    "name": "Rabi Mushiya",
+    "role": "UK consultant",
+    "image": "assets/img/team/team-16.png",
     "link": "about-me.html"
   }
 ]
