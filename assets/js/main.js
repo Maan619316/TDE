@@ -923,21 +923,120 @@ $(document).ready(function () {
 // });
 
 //pop up
+// document.addEventListener("DOMContentLoaded", function () {
+//   const popup = document.getElementById("popup");
+//   const closePopup = document.getElementById("close-popup");
+//   const bookPackage = document.getElementById("book-package");
+
+//   // Show popup on page load
+//   popup.style.display = "flex";
+
+//   // Close popup when clicking the close button
+//   closePopup.addEventListener("click", function () {
+//     popup.style.display = "none";
+//   });
+
+//   // Add event listener for the book package button
+//   bookPackage.addEventListener("click", function () {
+//     window.location.href = "price.html"; // Redirect to booking page
+//   });
+// });
+
+// This script handles the popup and sticky banner functionality
+// It includes showing/hiding the popup, countdown timers, and sticky banner behavior
 document.addEventListener("DOMContentLoaded", function () {
+  // Popup functionality
   const popup = document.getElementById("popup");
-  const closePopup = document.getElementById("close-popup");
-  const bookPackage = document.getElementById("book-package");
+  const closeBtn = document.getElementById("close-popup");
 
-  // Show popup on page load
-  popup.style.display = "flex";
+  // Show popup after 3 seconds
+  setTimeout(() => {
+    popup.style.display = "block";
+    document.body.style.overflow = "hidden";
+  }, 3000);
 
-  // Close popup when clicking the close button
-  closePopup.addEventListener("click", function () {
+  // Close popup function
+  function closePopup() {
     popup.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  // Close button event
+  closeBtn.addEventListener("click", closePopup);
+
+  // Close when clicking outside
+  popup.addEventListener("click", function (e) {
+    if (e.target === popup) {
+      closePopup();
+    }
   });
 
-  // Add event listener for the book package button
-  bookPackage.addEventListener("click", function () {
-    window.location.href = "price.html"; // Redirect to booking page
+  // Close with ESC key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && popup.style.display === "block") {
+      closePopup();
+    }
   });
+
+  // Countdown timers
+  function updateCountdowns() {
+    const targetDate = new Date("2025-08-25T23:59:59").getTime();
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    // Update popup countdown
+    const popupDays = document.getElementById("popup-days");
+    const popupHours = document.getElementById("popup-hours");
+    const popupMinutes = document.getElementById("popup-minutes");
+
+    if (popupDays) popupDays.textContent = days.toString().padStart(2, "0");
+    if (popupHours) popupHours.textContent = hours.toString().padStart(2, "0");
+    if (popupMinutes)
+      popupMinutes.textContent = minutes.toString().padStart(2, "0");
+
+    // Update banner countdown
+    const bannerDays = document.getElementById("banner-days");
+    const bannerHours = document.getElementById("banner-hours");
+    const bannerMinutes = document.getElementById("banner-minutes");
+
+    if (bannerDays) bannerDays.textContent = days.toString().padStart(2, "0");
+    if (bannerHours)
+      bannerHours.textContent = hours.toString().padStart(2, "0");
+    if (bannerMinutes)
+      bannerMinutes.textContent = minutes.toString().padStart(2, "0");
+
+    if (distance < 0) {
+      // Handle expired countdown
+      const popupCountdown = document.querySelector(".popup-countdown");
+      const bannerTimer = document.querySelector(".banner-timer");
+
+      if (popupCountdown) {
+        popupCountdown.innerHTML =
+          '<h6 style="color: #ff4757;">Offer Expired</h6>';
+      }
+      if (bannerTimer) {
+        bannerTimer.innerHTML =
+          '<span style="color: #ff4757; font-size: 0.8rem;">Offer Expired</span>';
+      }
+    }
+  }
+
+  // Update countdowns every second
+  updateCountdowns();
+  setInterval(updateCountdowns, 1000);
 });
+
+// Close sticky banner function
+function closeStickyBanner() {
+  const banner = document.getElementById("sticky-course-banner");
+  banner.style.transform = "translateY(100%)";
+  setTimeout(() => {
+    banner.style.display = "none";
+  }, 300);
+}

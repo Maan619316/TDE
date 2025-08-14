@@ -9200,7 +9200,6 @@ p.checkout-coupon input[type="text"]:focus {
     font-size: 20px;
   }
 }
-
 .scroll-top {
   width: 50px;
   height: 50px;
@@ -9210,7 +9209,7 @@ p.checkout-coupon input[type="text"]:focus {
   right: 6%;
   font-size: 16px;
   border-radius: 6px;
-  z-index: 99;
+  z-index: 1001; /* Higher than banner (1000) */
   color: var(--tp-common-white);
   text-align: center;
   cursor: pointer;
@@ -9218,33 +9217,38 @@ p.checkout-coupon input[type="text"]:focus {
   transition: 1s ease;
   border: none;
 }
+
 @media (max-width: 1600px) {
   .scroll-top {
     right: 7%;
   }
 }
 
-@media (max-width: 900px) {
-}
 @media (max-width: 1200px) {
   .scroll-top {
     right: 10%;
   }
-  .line {
-    width: 200px;
-  }
 }
+
 @media (max-width: 767px) {
   .scroll-top {
     right: 50%;
-  }
-  .line {
-    width: 120px;
   }
 }
 
 .scroll-top.open {
   bottom: 30px;
+}
+
+/* When sticky banner is visible, move scroll-top button up */
+body:has(.sticky-course-banner) .scroll-top.open {
+  bottom: 90px; /* Banner height + some spacing */
+}
+
+@media (max-width: 768px) {
+  body:has(.sticky-course-banner) .scroll-top.open {
+    bottom: 110px; /* More space on mobile as banner is taller */
+  }
 }
 
 .scroll-top::after {
@@ -9263,6 +9267,101 @@ p.checkout-coupon input[type="text"]:focus {
   );
 }
 
+/* WhatsApp Floating Button CSS */
+#whatsapp-floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001; /* Higher than banner (1000) */
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#whatsapp-floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+#whatsapp-floating-button img {
+  width: 35px;
+  height: 35px;
+}
+
+/* When sticky banner is visible, move WhatsApp button up */
+body:has(.sticky-course-banner) #whatsapp-floating-button {
+  bottom: 90px; /* Banner height + some spacing */
+}
+
+@media (max-width: 768px) {
+  #whatsapp-floating-button {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  #whatsapp-floating-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* When sticky banner is visible on mobile */
+  body:has(.sticky-course-banner) #whatsapp-floating-button {
+    bottom: 110px; /* More space on mobile as banner is taller */
+  }
+}
+
+@media (max-width: 480px) {
+  #whatsapp-floating-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  #whatsapp-floating-button img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* When sticky banner is visible on mobile */
+  body:has(.sticky-course-banner) #whatsapp-floating-button {
+    bottom: 120px;
+  }
+}
+
+/* Alternative approach using JavaScript class (if :has() doesn't work in older browsers) */
+.banner-visible .scroll-top.open {
+  bottom: 90px !important;
+}
+
+.banner-visible #whatsapp-floating-button {
+  bottom: 90px !important;
+}
+
+@media (max-width: 768px) {
+  .banner-visible .scroll-top.open {
+    bottom: 110px !important;
+  }
+  
+  .banner-visible #whatsapp-floating-button {
+    bottom: 110px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-visible #whatsapp-floating-button {
+    bottom: 120px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 .filter-buttons {
@@ -9344,8 +9443,224 @@ p.checkout-coupon input[type="text"]:focus {
   }
 }
 
+/*----------------------------------------*/
+/* Sticky Course Banner */
+/* This CSS creates a sticky banner that appears at the bottom of the screen after a delay */
+.sticky-course-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 12px 20px;
+  z-index: 1000;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(100%);
+  animation: slideUpBanner 0.5s ease forwards;
+  animation-delay: 5s;
+}
+
+@keyframes slideUpBanner {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.banner-icon {
+  font-size: 1.5rem;
+  color: #33cc79;
+}
+
+.banner-info h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.banner-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+.banner-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px;
+}
+
+.banner-price-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #33cc79;
+}
+
+.banner-original {
+  font-size: 0.9rem;
+  color: #ff4757;
+  text-decoration: line-through;
+}
+
+.banner-timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 15px;
+}
+
+.banner-timer-item {
+  background: rgba(255, 71, 87, 0.2);
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 30px;
+}
+
+.banner-timer-number {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ff4757;
+  display: block;
+}
+
+.banner-timer-label {
+  font-size: 0.6rem;
+  color: #e0e0e0;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.banner-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.banner-btn-primary {
+  background: #33cc79;
+  color: #000;
+}
+
+.banner-btn-primary:hover {
+  background: #2bb86a;
+  transform: translateY(-1px);
+  color: #000;
+}
+
+.banner-btn-secondary {
+  background: transparent;
+  color: #33cc79;
+  border: 1px solid #33cc79;
+}
+
+.banner-btn-secondary:hover {
+  background: #33cc79;
+  color: #000;
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.banner-close:hover {
+  color: #ff4757;
+}
+
+@media (max-width: 768px) {
+  .sticky-course-banner {
+    padding: 10px 15px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .banner-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-info h5 {
+    font-size: 0.9rem;
+  }
+
+  .banner-info p {
+    font-size: 0.75rem;
+  }
+
+  .banner-price,
+  .banner-timer {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .banner-buttons {
+    justify-content: center;
+  }
+
+  .banner-btn {
+    flex: 1;
+    max-width: 120px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .banner-timer {
+    gap: 5px;
+  }
+
+  .banner-timer-item {
+    min-width: 25px;
+    padding: 3px 6px;
+  }
+
+  .banner-timer-number {
+    font-size: 0.8rem;
+  }
+}
+
 /* Pop up */
-.popup {
+/* .popup {
   display: none;
   position: fixed;
   z-index: 100;
@@ -9393,54 +9708,220 @@ p.checkout-coupon input[type="text"]:focus {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-}
-.tp-team-area {
-  overflow-y: hidden; 
-  margin-bottom: 50px;
-}
-.team-container {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.team-container::-webkit-scrollbar {
-  display: none; 
-}
-.team-container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.team-row {
-  display: inline-flex;
-}
-.team-member {
-  margin-top: 50px;
-  text-align: center;
-  width: 30px;
-  margin-right: 200px;
-  margin-left: 30px;
-}
+} */
 
-.tp-team-content {
-  margin-left: 30px;
-}
-.tp-testimonial-three__content-text {
-  margin-bottom: 20%;
-}
-
-#whatsapp-floating-button {
+/*course pop up */
+.popup {
+  display: none;
   position: fixed;
-  z-index: 99;
-  bottom: 3%;
-  right: 2%;
-  background-color: #25d366;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#whatsapp-floating-button img {
+  z-index: 10000;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+.popup-content {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  margin: 15% auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  animation: popupSlideIn 0.3s ease;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes popupSlideIn {
+  from {
+    transform: scale(0.9) translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.close-button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff4757;
+}
+
+.popup-badge {
+  background: #ff4757;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.popup-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.popup-subtitle {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.popup-price-box {
+  background: rgba(51, 204, 121, 0.1);
+  border: 1px solid #33cc79;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.popup-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #33cc79;
+}
+
+.popup-original-price {
+  font-size: 1rem;
+  color: #ff4757;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.popup-discount {
+  background: #ff4757;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.popup-countdown {
+  background: rgba(255, 71, 87, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.popup-countdown h6 {
+  color: #ff4757;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.popup-countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.popup-countdown-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 8px;
+  border-radius: 5px;
+  min-width: 35px;
+  text-align: center;
+}
+
+.popup-countdown-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4757;
+  display: block;
+}
+
+.popup-countdown-label {
+  font-size: 0.6rem;
+  color: #e0e0e0;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.popup-btn-primary {
+  background: #33cc79;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 140px;
+}
+
+.popup-btn-primary:hover {
+  background: #2bb86a;
+  transform: translateY(-1px);
+  color: #000;
+}
+
+.popup-btn-secondary {
+  background: transparent;
+  color: #33cc79;
+  padding: 12px 20px;
+  border: 1px solid #33cc79;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 120px;
+}
+
+.popup-btn-secondary:hover {
+  background: #33cc79;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    margin: 10% auto;
+    padding: 20px;
+    width: 95%;
+  }
+
+  .popup-title {
+    font-size: 1.5rem;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .popup-btn-primary,
+  .popup-btn-secondary {
+    max-width: 100%;
+  }
 }

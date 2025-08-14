@@ -184,7 +184,7 @@
     <!-- tp-offcanvus-area-end -->
 
     <!-- POP UP START-->
-    <div id="popup" class="popup">
+    <!-- <div id="popup" class="popup">
       <div class="popup-content">
         <span id="close-popup" class="close-button">&times;</span>
         <img
@@ -194,6 +194,56 @@
         />
         <div class="popup-buttons">
           <button id="book-package" class="tp-btn-2">Book Package</button>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="close-popup" class="close-button">&times;</span>
+
+        <div class="popup-badge">🚀 NEW COURSE LAUNCH</div>
+
+        <h2 class="popup-title">
+          🎨 Master UI/UX in <span style="color: #33cc79">40 Days</span>
+        </h2>
+
+        <p class="popup-subtitle">
+          Learn from expert Abdul Muiz & start earning in USD through
+          international freelancing
+        </p>
+
+        <div class="popup-price-box">
+          <div class="popup-price">
+            <span class="popup-original-price">PKR 6,000</span>
+            PKR 4,500
+          </div>
+          <div class="popup-discount">Save 25% - Limited Time!</div>
+        </div>
+
+        <div class="popup-countdown">
+          <h6>⏰ Offer Ends Soon!</h6>
+          <div class="popup-countdown-timer" id="popup-countdown">
+            <div class="popup-countdown-item">
+              <span class="popup-countdown-number" id="popup-days">00</span>
+              <span class="popup-countdown-label">Days</span>
+            </div>
+            <div class="popup-countdown-item">
+              <span class="popup-countdown-number" id="popup-hours">00</span>
+              <span class="popup-countdown-label">Hrs</span>
+            </div>
+            <div class="popup-countdown-item">
+              <span class="popup-countdown-number" id="popup-minutes">00</span>
+              <span class="popup-countdown-label">Min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-buttons">
+          <a href="uiux-course.html" class="popup-btn-primary"> Enroll Now </a>
+          <a href="uiux-course.html" class="popup-btn-secondary">
+            Learn More
+          </a>
         </div>
       </div>
     </div>
@@ -259,6 +309,58 @@
                     <span>See Inside</span>
                   </div> -->
                 </div>
+              </div>
+            </div>
+            <div id="sticky-course-banner" class="sticky-course-banner">
+              <div class="banner-content">
+                <div class="banner-text">
+                  <div class="banner-icon">🎨</div>
+                  <div class="banner-info">
+                    <h5>UI/UX Design Course - 40 Days</h5>
+                    <p>Learn from Abdul Muiz • Start earning in USD</p>
+                  </div>
+                </div>
+
+                <div class="banner-price">
+                  <span class="banner-original">PKR 6,000</span>
+                  <span class="banner-price-text">PKR 4,500</span>
+                </div>
+
+                <div class="banner-timer">
+                  <div class="banner-timer-item">
+                    <span class="banner-timer-number" id="banner-days">00</span>
+                    <span class="banner-timer-label">D</span>
+                  </div>
+                  <div class="banner-timer-item">
+                    <span class="banner-timer-number" id="banner-hours"
+                      >00</span
+                    >
+                    <span class="banner-timer-label">H</span>
+                  </div>
+                  <div class="banner-timer-item">
+                    <span class="banner-timer-number" id="banner-minutes"
+                      >00</span
+                    >
+                    <span class="banner-timer-label">M</span>
+                  </div>
+                </div>
+
+                <div class="banner-buttons">
+                  <a
+                    href="uiux-course.html"
+                    class="banner-btn banner-btn-primary"
+                    >Enroll Now</a
+                  >
+                  <a
+                    href="uiux-course.html"
+                    class="banner-btn banner-btn-secondary"
+                    >Details</a
+                  >
+                </div>
+
+                <button class="banner-close" onclick="closeStickyBanner()">
+                  &times;
+                </button>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6">
@@ -1208,5 +1310,41 @@
     <script src="assets/js/imagesloaded-pkgd.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+      // Mini countdown timer for the banner
+      function updateMiniCountdown() {
+        const targetDate = new Date("2025-08-25T23:59:59").getTime();
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        const daysEl = document.getElementById("mini-days");
+        const hoursEl = document.getElementById("mini-hours");
+        const minutesEl = document.getElementById("mini-minutes");
+
+        if (daysEl) daysEl.textContent = days.toString().padStart(2, "0");
+        if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, "0");
+        if (minutesEl)
+          minutesEl.textContent = minutes.toString().padStart(2, "0");
+
+        if (distance < 0) {
+          const timerEl = document.querySelector(".course-timer");
+          if (timerEl) {
+            timerEl.innerHTML =
+              '<div style="font-weight: 600;">Offer Expired - Regular Price Applies</div>';
+          }
+        }
+      }
+
+      // Initialize mini countdown
+      updateMiniCountdown();
+      setInterval(updateMiniCountdown, 1000);
+    </script>
   </body>
 </html>

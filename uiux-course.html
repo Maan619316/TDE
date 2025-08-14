@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>UI/UX Design Course - TDE Officials</title>
+    <meta
+      name="description"
+      content="Master UI/UX Design in 40 Days - Start Earning in Dollars with TDE Officials"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/custom-animation.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Course specific styles */
+      .course-banner {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        padding: 60px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .course-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%2333cc79" fill-opacity="0.1" points="0,0 1000,300 1000,1000 0,700"/></svg>');
+        z-index: 1;
+      }
+
+      .course-banner .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .course-hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .course-hero-subtitle {
+        font-size: 1.25rem;
+        color: #e0e0e0;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .course-hero-tagline {
+        font-size: 1.5rem;
+        color: #33cc79;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      .course-cta-buttons {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .course-btn-primary {
+        background: #33cc79;
+        color: #000;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: none;
+        font-size: 1.1rem;
+      }
+
+      .course-btn-primary:hover {
+        background: #2bb86a;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(51, 204, 121, 0.3);
+        color: #000;
+      }
+
+      .course-btn-secondary {
+        background: transparent;
+        color: #33cc79;
+        padding: 15px 40px;
+        border: 2px solid #33cc79;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+      }
+
+      .course-btn-secondary:hover {
+        background: #33cc79;
+        color: #000;
+      }
+
+      .instructor-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .instructor-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 20px;
+        border: 4px solid #33cc79;
+      }
+
+      .countdown-section {
+        background: #ff4757;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .countdown-timer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+      }
+
+      .countdown-item {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 10px 15px;
+        border-radius: 10px;
+        min-width: 60px;
+      }
+
+      .countdown-number {
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+      }
+
+      .countdown-label {
+        font-size: 0.8rem;
+        opacity: 0.8;
+      }
+
+      .course-features {
+        background: #f8f9fa;
+        padding: 80px 0;
+      }
+
+      .feature-item {
+        text-align: center;
+        padding: 30px 20px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .feature-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .feature-icon {
+        font-size: 3rem;
+        color: #33cc79;
+        margin-bottom: 20px;
+      }
+
+      .course-curriculum {
+        padding: 80px 0;
+        background: #1a1a1a;
+        color: white;
+      }
+
+      .curriculum-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        border-left: 4px solid #33cc79;
+      }
+
+      .whatsapp-cta {
+        background: #25d366;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      .whatsapp-btn {
+        background: white;
+        color: #25d366;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        color: #25d366;
+      }
+
+      /* Modal Styles */
+      .course-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+      }
+
+      .course-modal-content {
+        background-color: white;
+        margin: 5% auto;
+        padding: 40px;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 600px;
+        position: relative;
+        animation: modalSlideIn 0.3s ease;
+      }
+
+      @keyframes modalSlideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .modal-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #888;
+      }
+
+      .modal-close:hover {
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #33cc79;
+      }
+
+      .form-note {
+        background: #fff3cd;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 4px solid #ffc107;
+        margin: 20px 0;
+        font-size: 0.9rem;
+      }
+
+      .submit-btn {
+        background: #33cc79;
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+      }
+
+      .submit-btn:hover {
+        background: #2bb86a;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        .course-hero-title {
+          font-size: 2.5rem;
+        }
+
+        .course-cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .course-btn-primary,
+        .course-btn-secondary {
+          width: 100%;
+          text-align: center;
+          max-width: 300px;
+        }
+
+        .countdown-timer {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .course-modal-content {
+          margin: 10% auto;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div
+        id="header-sticky"
+        class="tp-header-area header-pl-pr header-transparent header-border-bottom"
+        style="max-height: 120px; padding-top: 0px"
+      >
+        <div
+          class="container-fluid"
+          style="max-height: 120px; padding-top: 0px"
+        >
+          <div class="row g-0 align-items-center" style="max-height: 120px">
+            <div
+              class="col-xl-2 col-lg-2 col-md-4 col-6"
+              style="max-height: 120px"
+            >
+              <div class="tp-logo tp-logo-border" style="max-height: 120px">
+                <a href="index.html">
+                  <img src="assets/img/logo/logo.png" alt="TDE Logo" />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-xl-10 col-lg-10 col-md-8 col-6 d-flex justify-content-end"
+              style="max-height: 120px; margin-left: -100px"
+            >
+              <div class="tp-main-menu d-none d-xl-block">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="case-studies.html">Our Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="price.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tp-header-right" style="max-height: 120px">
+                <ul>
+                  <li>
+                    <a class="tp-menu-bar" href="javascript:void(0)"
+                      ><i class="fas fa-bars"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <div class="countdown-section">
+      <div class="container">
+        <h4 style="margin: 0; font-size: 1.2rem">
+          ⏳ Limited Time Offer - 25% Discount (First 30 Students Only)
+        </h4>
+        <div class="countdown-timer" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- WhatsApp Floating Button -->
+      <a
+        href="https://wa.me/447774963563"
+        target="_blank"
+        id="whatsapp-floating-button"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <!-- Hero Section -->
+      <section class="course-banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h1
+                class="course-hero-title wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".3s"
+              >
+                🎨 Become a UI/UX Designer in
+                <span style="color: #33cc79">40 Days</span>
+              </h1>
+              <p
+                class="course-hero-subtitle wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".5s"
+              >
+                Master Figma, build real-world projects, and launch your
+                freelance career with Abdul Muiz (Senior UI/UX Designer, 3+
+                years experience).
+              </p>
+              <div
+                class="course-hero-tagline wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".7s"
+              >
+                💡 Finally enjoy your life — you deserve it!
+              </div>
+              <div
+                class="course-cta-buttons wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".9s"
+              >
+                <button class="course-btn-primary" onclick="openEnrollModal()">
+                  Enroll Now - PKR 4500
+                </button>
+                <a href="#curriculum" class="course-btn-secondary">
+                  Download Course Outline
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="instructor-card wow tpfadeRight"
+                data-wow-duration=".7s"
+                data-wow-delay="1s"
+              >
+                <img
+                  src="assets/img/team/team-4.jpg"
+                  alt="Abdul Muiz"
+                  class="instructor-image"
+                />
+                <h4 style="color: white; margin-bottom: 10px">Abdul Muiz</h4>
+                <p style="color: #33cc79; margin-bottom: 10px">
+                  Senior UI/UX Designer
+                </p>
+                <p style="color: #e0e0e0; font-size: 0.9rem">
+                  3+ Years Industry Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Features -->
+      <section class="course-features">
+        <div class="container">
+          <div class="row text-center mb-60">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="tp-section-title">Why Choose This Course?</h2>
+              <p class="tp-section-subtitle">
+                A beginner-to-expert UI/UX program designed to make you
+                job-ready and confident to work with international clients.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".3s"
+              >
+                <div class="feature-icon">💼</div>
+                <h4>Industry Experience</h4>
+                <p>
+                  Learn from Abdul Muiz with 3+ years of real industry
+                  experience in UI/UX design.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".5s"
+              >
+                <div class="feature-icon">💵</div>
+                <h4>Earn in USD</h4>
+                <p>
+                  Learn proven strategies to earn in $ through international
+                  Freelance platforms.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".7s"
+              >
+                <div class="feature-icon">🎓</div>
+                <h4>Official Certificate</h4>
+                <p>
+                  Get a professional certificate from TDE Officials to boost
+                  your credibility.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".9s"
+              >
+                <div class="feature-icon">📈</div>
+                <h4>Practical Assignments</h4>
+                <p>
+                  Work on real projects and build a portfolio that impresses
+                  clients.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay="1.1s"
+              >
+                <div class="feature-icon">🌍</div>
+                <h4>Lifetime Access</h4>
+                <p>
+                  Get lifetime access to all course materials and recorded
+                  sessions.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="feature-item wow tpfadeUp"
+                data-wow-duration=".7s"
+                data-wow-delay="1.3s"
+              >
+                <div class="feature-icon">🚀</div>
+                <h4>Career Support</h4>
+                <p>
+                  Get guidance on freelancing, portfolio building, and client
+                  acquisition.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Curriculum -->
+      <section class="course-curriculum" id="curriculum">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="tp-section-title" style="color: white">
+                What You'll Learn
+              </h2>
+              <p style="color: #e0e0e0; margin-bottom: 40px">
+                Complete curriculum designed to take you from beginner to
+                professional UI/UX designer.
+              </p>
+
+              <div class="curriculum-item">
+                <h5 style="color: #33cc79">✅ Figma Basics to Advanced</h5>
+                <p>
+                  Master the most popular design tool used by professionals
+                  worldwide.
+                </p>
+              </div>
+
+              <div class="curriculum-item">
+                <h5 style="color: #33cc79">✅ UI Layouts & Components</h5>
+                <p>
+                  Learn to create beautiful, functional user interfaces and
+                  reusable components.
+                </p>
+              </div>
+
+              <div class="curriculum-item">
+                <h5 style="color: #33cc79">✅ UX Research & Wireframing</h5>
+                <p>
+                  Understand user psychology and create wireframes that solve
+                  real problems.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div style="margin-top: 80px">
+                <div class="curriculum-item">
+                  <h5 style="color: #33cc79">✅ Prototyping & Animations</h5>
+                  <p>
+                    Bring your designs to life with interactive prototypes and
+                    micro-animations.
+                  </p>
+                </div>
+
+                <div class="curriculum-item">
+                  <h5 style="color: #33cc79">✅ Real Client Projects</h5>
+                  <p>
+                    Work on actual client projects to gain real-world
+                    experience.
+                  </p>
+                </div>
+
+                <div class="curriculum-item">
+                  <h5 style="color: #33cc79">✅ Portfolio & Freelance Tips</h5>
+                  <p>
+                    Build a winning portfolio and learn how to get high-paying
+                    clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WhatsApp CTA -->
+      <section class="whatsapp-cta">
+        <div class="container text-center">
+          <h3 style="margin-bottom: 20px">
+            📞 Have Questions? We're Here to Help!
+          </h3>
+          <p style="margin-bottom: 30px; font-size: 1.1rem">
+            Chat with us on WhatsApp for instant support and course details.
+          </p>
+          <a
+            href="https://wa.me/923377236836"
+            class="whatsapp-btn"
+            target="_blank"
+          >
+            💬 Chat on WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enrollment Modal -->
+    <div id="enrollModal" class="course-modal">
+      <div class="course-modal-content">
+        <span class="modal-close" onclick="closeEnrollModal()">&times;</span>
+        <h2 style="text-align: center; margin-bottom: 30px; color: #333">
+          📋 Register for the 40-Day UI/UX Design Course
+        </h2>
+
+        <form
+          id="enrollForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="290b3946-ab7c-465a-a736-f7f755247906"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New UI/UX Course Enrollment"
+          />
+
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number *</label>
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              required
+              placeholder="+92 xxx xxx xxxx"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="paymentProof"
+              >Upload Payment Proof * (JPG/PNG/PDF only)</label
+            >
+            <input
+              type="file"
+              id="paymentProof"
+              name="paymentProof"
+              accept=".jpg,.png,.pdf"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Any questions or special requirements?"
+            ></textarea>
+          </div>
+
+          <div class="form-note">
+            <strong>⚠ Important:</strong> Classes start 22nd August — Enroll
+            before 21st August to secure your seat and get a 25% discount (First
+            30 students only). <br /><br />
+            <strong>Payment Details:</strong><br />
+            Bank: Easy Paisa/Jazz Cash<br />
+            Account: +92 337 7236836<br />
+            Amount: PKR 4,500 (Discounted from PKR 6,000)
+          </div>
+
+          <button type="submit" class="submit-btn">
+            🎓 Complete Enrollment
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="tp-footer-area footer-bg pt-130"
+        data-background="assets/img/footer/footer-bg.jpg"
+      >
+        <div class="container">
+          <div class="row footer-row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+              <div class="tp-footer-widget z-index-3">
+                <div class="tp-footer-widget__list">
+                  <img
+                    src="assets/img/logo/logo-white.png"
+                    style="width: 150px"
+                    alt="Logo"
+                  />
+                  <ul class="footer-nav mt-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="case-studies.html">Portfolio</a></li>
+                    <li><a href="price.html">Packages</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+              <div class="tp-footer-widget z-index-3">
+                <div class="tp-footer-widget__title">
+                  <h4 class="tp-footer-title">Email Us</h4>
+                </div>
+                <div class="tp-footer-widget__list">
+                  <ul class="footer-contact">
+                    <li>
+                      <a href="mailto:thedigitalenvironmentofficials@gmail.com"
+                        >thedigitalenvironmentofficials@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mailto:tariq.naseeb86@gmail.com"
+                        >tariq.naseeb86@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+              <div class="tp-footer-widget z-index-3">
+                <div class="tp-footer-widget__title">
+                  <h4 class="tp-footer-title">Contact Us</h4>
+                </div>
+                <div class="tp-footer-widget__list">
+                  <ul class="footer-contact">
+                    <li>
+                      Pakistan: <a href="tel:+923377236836">+92 337 723 6836</a>
+                    </li>
+                    <li>UK: <a href="tel:+447774963563">+44 7774 963563</a></li>
+                    <li>
+                      Qatar: <a href="tel:+97466259279">+974 6625 9279</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+              <div class="tp-footer-widget z-index-3">
+                <div class="tp-footer-widget__title">
+                  <h4 class="tp-footer-title">Our Addresses</h4>
+                </div>
+                <div class="tp-footer-widget__list">
+                  <ul class="footer-address">
+                    <li>
+                      Pakistan:
+                      <a
+                        href="https://maps.app.goo.gl/ButXoNK6bwQ4BxtUA"
+                        target="_blank"
+                        >E 11/3 Islamabad, Pakistan</a
+                      >
+                    </li>
+                    <li>
+                      UK:
+                      <a
+                        href="https://maps.app.goo.gl/8PYh54zUtbwm18v1A"
+                        target="_blank"
+                        >Deli-X 154-156 Deptford High Street London SE83PQ</a
+                      >
+                    </li>
+                    <li>Qatar: <a href="#" target="_blank">Doha, Qatar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copy-right-wrapper z-index-3">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7 col-12">
+                <div class="copyright-left text-center text-lg-start">
+                  <p>©Copy Right @2024 All Rights Reserved - TDE</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-5 col-12">
+                <div class="copyright-right-side text-center text-lg-end">
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Sales and Refunds</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      // Countdown Timer
+      function updateCountdown() {
+        const targetDate = new Date("2025-08-25T23:59:59").getTime();
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").textContent = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").textContent = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").textContent = seconds
+          .toString()
+          .padStart(2, "0");
+
+        if (distance < 0) {
+          document.querySelector(".countdown-section").innerHTML =
+            '<div class="container"><h4>Offer Expired - Regular Price Now Applies</h4></div>';
+        }
+      }
+
+      // Update countdown every second
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // Modal Functions
+      function openEnrollModal() {
+        document.getElementById("enrollModal").style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeEnrollModal() {
+        document.getElementById("enrollModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        const modal = document.getElementById("enrollModal");
+        if (event.target === modal) {
+          closeEnrollModal();
+        }
+      };
+
+      // Form submission handler
+      document
+        .getElementById("enrollForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Basic validation
+          const fileInput = document.getElementById("paymentProof");
+          const file = fileInput.files[0];
+
+          if (!file) {
+            alert("Please upload payment proof before submitting.");
+            return;
+          }
+
+          const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
+          if (!allowedTypes.includes(file.type)) {
+            alert("Please upload only JPG, PNG, or PDF files.");
+            return;
+          }
+
+          // If validation passes, submit the form
+          this.submit();
+
+          // Show success message
+          setTimeout(() => {
+            alert(
+              "Enrollment submitted successfully! We will contact you within 24 hours."
+            );
+            closeEnrollModal();
+            this.reset();
+          }, 100);
+        });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
