@@ -94,12 +94,15 @@
         cursor: pointer;
         transition: all 0.3s ease;
         box-shadow: 0 4px 15px rgba(51, 204, 121, 0.3);
+        text-decoration: none;
+        display: inline-block;
       }
 
       .course-btn-primary:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(51, 204, 121, 0.4);
         color: #fff;
+        text-decoration: none;
       }
 
       .course-btn-secondary {
@@ -298,119 +301,6 @@
         text-decoration: none;
       }
 
-      /* Modal Styles */
-      .course-modal {
-        display: none;
-        position: fixed;
-        z-index: 10000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(5px);
-      }
-
-      .course-modal-content {
-        background-color: #fff;
-        margin: 2% auto;
-        padding: 40px;
-        border-radius: 15px;
-        width: 90%;
-        max-width: 600px;
-        max-height: 90vh;
-        overflow-y: auto;
-        position: relative;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      }
-
-      .modal-close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-      }
-
-      .modal-close:hover,
-      .modal-close:focus {
-        color: #000;
-        text-decoration: none;
-      }
-
-      .form-group {
-        margin-bottom: 25px;
-      }
-
-      .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
-        color: #333;
-      }
-
-      .form-group input,
-      .form-group textarea,
-      .form-group select {
-        width: 100%;
-        padding: 12px;
-        border: 2px solid #e9ecef;
-        border-radius: 8px;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-      }
-
-      .form-group input:focus,
-      .form-group textarea:focus,
-      .form-group select:focus {
-        outline: none;
-        border-color: #33cc79;
-        box-shadow: 0 0 0 3px rgba(51, 204, 121, 0.1);
-      }
-
-      .payment-info {
-        background: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 25px;
-        border: 2px solid #33cc79;
-      }
-
-      .payment-info h4 {
-        color: #33cc79;
-        margin-bottom: 15px;
-      }
-
-      .submit-btn {
-        background: linear-gradient(45deg, #33cc79, #28a768);
-        color: #fff;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        cursor: pointer;
-        width: 100%;
-        transition: all 0.3s ease;
-      }
-
-      .submit-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(51, 204, 121, 0.4);
-      }
-
-      .form-note {
-        background: #fff3cd;
-        color: #856404;
-        padding: 15px;
-        border-radius: 8px;
-        border: 1px solid #ffeaa7;
-        margin-bottom: 25px;
-      }
-
       /* WhatsApp Floating Button */
       #whatsapp-floating-button {
         position: fixed;
@@ -558,9 +448,13 @@
                 data-wow-duration=".7s"
                 data-wow-delay=".9s"
               >
-                <button class="course-btn-primary" onclick="openEnrollModal()">
+                <a
+                  href="https://forms.gle/QVa23vtErwdGefvj7"
+                  target="_blank"
+                  class="course-btn-primary"
+                >
                   Enroll Now - PKR 8,625 (25% OFF)
-                </button>
+                </a>
                 <a href="#curriculum" class="course-btn-secondary">
                   View Training Outline
                 </a>
@@ -762,9 +656,13 @@
 
           <!-- Second Enroll Now Button -->
           <div class="text-center mt-60">
-            <button class="course-btn-primary" onclick="openEnrollModal()">
+            <a
+              href="https://forms.gle/QVa23vtErwdGefvj7"
+              target="_blank"
+              class="course-btn-primary"
+            >
               Enroll Now - PKR 8,625 (25% OFF)
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -788,130 +686,6 @@
         </div>
       </section>
     </main>
-
-    <!-- Enrollment Modal -->
-    <div id="enrollModal" class="course-modal">
-      <div class="course-modal-content">
-        <span class="modal-close" onclick="closeEnrollModal()">&times;</span>
-        <h2 style="text-align: center; margin-bottom: 30px; color: #333">
-          📋 Register for the 40-Day UI/UX Design Training
-        </h2>
-
-        <!-- Payment Information -->
-        <div class="payment-info">
-          <h4>💳 Payment Information</h4>
-          <p><strong>Original Price:</strong> PKR 11,500</p>
-          <p><strong>Discounted Price (25% OFF):</strong> PKR 8,625</p>
-          <p><strong>Bank Details:</strong></p>
-          <p>
-            HBL Branch E-11/3 Islamabad, Pakistan<br />
-            IBAN No. 53837000051303<br />
-            Ac.No. PK09HABB0053837000051303<br />
-            Name: Abdul Muiz
-          </p>
-          <p>
-            <strong>Important:</strong> Please send the payment first, then fill
-            out this form with your payment receipt.
-          </p>
-        </div>
-
-        <form
-          id="enrollForm"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="access_key"
-            value="290b3946-ab7c-465a-a736-f7f755247906"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="New UI/UX Training Enrollment"
-          />
-
-          <div class="form-group">
-            <label for="fullName">Full Name *</label>
-            <input type="text" id="fullName" name="name" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="whatsapp">WhatsApp Number *</label>
-            <input
-              type="tel"
-              id="whatsapp"
-              name="whatsapp"
-              required
-              placeholder="+92 xxx xxx xxxx"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="reason"
-              >Please specify - Why are you joining this training? *</label
-            >
-            <select id="reason" name="reason" required>
-              <option value="">Why are you joining this training?</option>
-              <option value="upgrade-skills">
-                I want to upgrade my skills
-              </option>
-              <option value="high-income-skill">
-                I want to learn a high-income skill
-              </option>
-              <option value="better-job">I want to get a better job</option>
-              <option value="impressive-portfolio">
-                I want to build impressive portfolio
-              </option>
-              <option value="start-freelance">I want to start freelance</option>
-              <option value="starting-designer">
-                I am just starting as UI/UX Designer
-              </option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="paymentProof"
-              >Upload Payment Proof * (JPG/PNG/PDF only)</label
-            >
-            <input
-              type="file"
-              id="paymentProof"
-              name="attachment"
-              data-advanced="true"
-              data-max-file-size="5MB"
-              data-max-files="1"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="comments">Additional Comments</label>
-            <textarea
-              id="comments"
-              name="message"
-              rows="4"
-              placeholder="Any questions or special requirements?"
-            ></textarea>
-          </div>
-
-          <div class="form-note">
-            <strong>⚠ Important:</strong> Classes start August 25th — Only 50
-            seats available. Training will be conducted online via Google Meet.
-          </div>
-
-          <button type="submit" class="submit-btn">
-            🎓 Complete Enrollment
-          </button>
-        </form>
-      </div>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -1042,9 +816,6 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <!-- Web3Forms Script -->
-    <script src="https://web3forms.com/client/script.js" async defer></script>
-
     <script>
       // Countdown Timer
       function updateCountdown() {
@@ -1081,63 +852,6 @@
       // Update countdown every second
       updateCountdown();
       setInterval(updateCountdown, 1000);
-
-      // Modal Functions
-      function openEnrollModal() {
-        document.getElementById("enrollModal").style.display = "block";
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeEnrollModal() {
-        document.getElementById("enrollModal").style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-
-      // Close modal when clicking outside
-      window.onclick = function (event) {
-        const modal = document.getElementById("enrollModal");
-        if (event.target === modal) {
-          closeEnrollModal();
-        }
-      };
-
-      // Form submission handler
-      document
-        .getElementById("enrollForm")
-        .addEventListener("submit", function (e) {
-          // Basic validation for file upload
-          const fileInput = document.getElementById("paymentProof");
-          const file = fileInput.files[0];
-
-          if (!file) {
-            e.preventDefault();
-            alert("Please upload payment proof before submitting.");
-            return;
-          }
-
-          const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
-          if (!allowedTypes.includes(file.type)) {
-            e.preventDefault();
-            alert("Please upload only JPG, PNG, or PDF files.");
-            return;
-          }
-
-          // File size check (5MB max)
-          if (file.size > 5 * 1024 * 1024) {
-            e.preventDefault();
-            alert("File size must be less than 5MB.");
-            return;
-          }
-
-          // If all validation passes, the form will submit normally via Web3Forms
-          // Show a quick message that form is being submitted
-          setTimeout(() => {
-            alert(
-              "Thank you for showing interest in our UI/UX Design Training! Our team will review your application and payment proof, then contact you within 24 hours to confirm your enrollment and provide further details."
-            );
-            closeEnrollModal();
-          }, 500);
-        });
 
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

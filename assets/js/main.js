@@ -980,7 +980,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Countdown timers
   function updateCountdowns() {
-    const targetDate = new Date("2025-08-25T23:59:59").getTime();
+    const targetDate = new Date("2025-08-25T00:00:00").getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
