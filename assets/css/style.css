@@ -9501,23 +9501,23 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .banner-price {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0 15px;
-}
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 15px;
+        }
 
-.banner-price-text {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #33cc79;
-}
+        .banner-price-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #33cc79;
+        }
 
-.banner-original {
-  font-size: 0.9rem;
-  color: #ff4757;
-  text-decoration: line-through;
-}
+        .banner-original {
+            font-size: 0.9rem;
+            color: #ff4757;
+            text-decoration: line-through;
+        }
 
 .banner-timer {
   display: flex;
@@ -9788,36 +9788,36 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-price-box {
-  background: rgba(51, 204, 121, 0.1);
-  border: 1px solid #33cc79;
-  padding: 15px;
-  border-radius: 10px;
-  margin: 15px 0;
-}
+            background: rgba(51, 204, 121, 0.1);
+            border: 1px solid #33cc79;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
 
-.popup-price {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #33cc79;
-}
+        .popup-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #33cc79;
+        }
 
-.popup-original-price {
-  font-size: 1rem;
-  color: #ff4757;
-  text-decoration: line-through;
-  margin-right: 8px;
-}
+        .popup-original-price {
+            font-size: 1rem;
+            color: #ff4757;
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
 
-.popup-discount {
-  background: #ff4757;
-  color: white;
-  padding: 3px 10px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 5px;
-}
+        .popup-discount {
+            background: #ff4757;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 5px;
+        }
 
 .popup-countdown {
   background: rgba(255, 71, 87, 0.1);

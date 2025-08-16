@@ -55,6 +55,44 @@
         z-index: 2;
       }
 
+      /* Course sections styling */
+      .course-hero {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        padding: 80px 0;
+        color: white;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+
+      .col-lg-8,
+      .col-lg-4 {
+        padding: 15px;
+      }
+
+      .col-lg-8 {
+        flex: 0 0 66.666667%;
+      }
+      .col-lg-4 {
+        flex: 0 0 33.333333%;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .mt-60 {
+        margin-top: 60px;
+      }
+
       .course-hero-title {
         font-size: 3.5rem;
         font-weight: 700;
@@ -64,7 +102,7 @@
       }
 
       .course-hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: #e0e0e0;
         margin-bottom: 20px;
         line-height: 1.6;
@@ -81,28 +119,7 @@
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-      }
-
-      .course-btn-primary {
-        background: linear-gradient(45deg, #33cc79, #28a768);
-        color: #fff;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(51, 204, 121, 0.3);
-        text-decoration: none;
-        display: inline-block;
-      }
-
-      .course-btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(51, 204, 121, 0.4);
-        color: #fff;
-        text-decoration: none;
+        align-items: center;
       }
 
       .course-btn-secondary {
@@ -140,6 +157,106 @@
         object-fit: cover;
         margin: 0 auto 20px;
         border: 4px solid #33cc79;
+      }
+
+      @media (max-width: 768px) {
+        .current-price {
+          font-size: 1.5rem;
+        }
+
+        .col-lg-8,
+        .col-lg-4 {
+          flex: 0 0 100%;
+        }
+      }
+
+      /* Course Button - Only "Enroll Now" */
+      .course-btn-primary {
+        background: linear-gradient(45deg, #33cc79, #28a768);
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(51, 204, 121, 0.3);
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .course-btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(51, 204, 121, 0.4);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Pricing Display Components */
+      .price-display {
+        background: rgba(51, 204, 121, 0.1);
+        border: 2px solid #33cc79;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .price-display-compact {
+        background: rgba(51, 204, 121, 0.1);
+        border: 1px solid #33cc79;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 15px 0;
+        display: inline-block;
+      }
+
+      .price-display-hero {
+        background: linear-gradient(
+          135deg,
+          rgba(51, 204, 121, 0.2),
+          rgba(40, 167, 104, 0.1)
+        );
+        border: 2px solid #33cc79;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 25px 0;
+        backdrop-filter: blur(10px);
+      }
+
+      .original-price {
+        font-size: 1.2rem;
+        color: #ff4757;
+        text-decoration: line-through;
+        margin-right: 10px;
+        opacity: 0.8;
+      }
+
+      .current-price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #33cc79;
+        margin: 0 10px;
+      }
+
+      .discount-badge {
+        background: #ff4757;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .price-text {
+        font-size: 0.9rem;
+        color: #e0e0e0;
+        margin-top: 5px;
       }
 
       /* Countdown Styles */
@@ -415,7 +532,8 @@
       </a>
 
       <!-- Hero Section -->
-      <section class="course-banner">
+      <section class="course-hero">
+        s
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-8">
@@ -437,11 +555,18 @@
                 years experience). Classes will be conducted online via Google
                 Meet.
               </p>
-              <div
-                class="course-hero-tagline wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".7s"
-              >
+
+              <!-- Pricing Display 1: Hero Section -->
+              <div class="price-display-hero">
+                <div>
+                  <span class="original-price">PKR 11,500</span>
+                  <span class="current-price">PKR 8,625</span>
+                </div>
+                <div class="discount-badge">Save 25% - Limited Time!</div>
+                <div class="price-text">Special launch offer ends soon</div>
+              </div>
+
+              <div class="course-hero-tagline">
                 💡 Finally enjoy your life — you deserve it!
               </div>
               <div
@@ -454,7 +579,7 @@
                   target="_blank"
                   class="course-btn-primary"
                 >
-                  Enroll Now - PKR 8,625 (25% OFF)
+                  Enroll Now
                 </a>
                 <a href="#curriculum" class="course-btn-secondary">
                   View Training Outline
@@ -479,6 +604,21 @@
                 <p style="color: #e0e0e0; font-size: 0.9rem">
                   3+ Years Industry Experience
                 </p>
+
+                <!-- Pricing Display 2: Instructor Card -->
+                <div class="price-display-compact">
+                  <div>
+                    <span class="original-price" style="font-size: 1rem"
+                      >PKR 11,500</span
+                    >
+                    <span class="current-price" style="font-size: 1.5rem"
+                      >PKR 8,625</span
+                    >
+                  </div>
+                  <div class="discount-badge" style="font-size: 0.8rem">
+                    25% OFF
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -654,20 +794,42 @@
               </ul>
             </div>
           </div>
+      </section>
+       <section style="background: #2d2d2d; padding: 60px 0; color: white">
+        <div class="container">
+          <div class="text-center">
+            <h2 style="margin-bottom: 30px; color: white">🚀 Launch Special Pricing</h2>
 
-          <!-- Second Enroll Now Button -->
-          <div class="text-center mt-60">
+            <!-- Pricing Display 3: Middle Section -->
+            <div class="price-display">
+              <div style="margin-bottom: 15px">
+                <span class="original-price">Original Price: PKR 11,500</span>
+              </div>
+              <div style="margin-bottom: 15px">
+                <span class="current-price">Your Price: PKR 8,625</span>
+              </div>
+              <div class="discount-badge">
+                You Save PKR 2,875 (25% Discount)
+              </div>
+              <div class="price-text">Limited time offer - Don't miss out!</div>
+            </div>
+
+            <p style="margin: 30px 0; font-size: 1.1rem; color: #e0e0e0">
+              Join hundreds of students who are already transforming their
+              careers
+            </p>
+
+            <!-- Updated Button - Only "Enroll Now" -->
             <a
               href="https://forms.gle/QVa23vtErwdGefvj7"
               target="_blank"
               class="course-btn-primary"
             >
-              Enroll Now - PKR 8,625 (25% OFF)
+              Enroll Now
             </a>
           </div>
         </div>
       </section>
-
       <!-- Have a Question Section -->
       <section class="whatsapp-cta">
         <div class="container text-center">
