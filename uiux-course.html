@@ -830,15 +830,10 @@
             name="subject"
             value="New UI/UX Training Enrollment"
           />
-          <input
-            type="hidden"
-            name="redirect"
-            value="https://your-website.com/thank-you"
-          />
 
           <div class="form-group">
             <label for="fullName">Full Name *</label>
-            <input type="text" id="fullName" name="fullName" required />
+            <input type="text" id="fullName" name="name" required />
           </div>
 
           <div class="form-group">
@@ -888,8 +883,10 @@
             <input
               type="file"
               id="paymentProof"
-              name="paymentProof"
-              accept=".jpg,.png,.pdf"
+              name="attachment"
+              data-advanced="true"
+              data-max-file-size="5MB"
+              data-max-files="1"
               required
             />
           </div>
@@ -898,7 +895,7 @@
             <label for="comments">Additional Comments</label>
             <textarea
               id="comments"
-              name="comments"
+              name="message"
               rows="4"
               placeholder="Any questions or special requirements?"
             ></textarea>
@@ -1045,6 +1042,9 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <!-- Web3Forms Script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
     <script>
       // Countdown Timer
       function updateCountdown() {
@@ -1105,49 +1105,38 @@
       document
         .getElementById("enrollForm")
         .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // Basic validation
+          // Basic validation for file upload
           const fileInput = document.getElementById("paymentProof");
           const file = fileInput.files[0];
 
           if (!file) {
+            e.preventDefault();
             alert("Please upload payment proof before submitting.");
             return;
           }
 
           const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
           if (!allowedTypes.includes(file.type)) {
+            e.preventDefault();
             alert("Please upload only JPG, PNG, or PDF files.");
             return;
           }
 
-          // If validation passes, submit the form
-          const formData = new FormData(this);
+          // File size check (5MB max)
+          if (file.size > 5 * 1024 * 1024) {
+            e.preventDefault();
+            alert("File size must be less than 5MB.");
+            return;
+          }
 
-          fetch(this.action, {
-            method: "POST",
-            body: formData,
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              if (data.success) {
-                alert(
-                  "Thank you for showing interest in our UI/UX Design Training! Our team will review your application and payment proof, then contact you within 24 hours to confirm your enrollment and provide further details."
-                );
-                closeEnrollModal();
-                this.reset();
-              } else {
-                alert(
-                  "There was an error submitting your application. Please try again."
-                );
-              }
-            })
-            .catch((error) => {
-              alert(
-                "There was an error submitting your application. Please try again."
-              );
-            });
+          // If all validation passes, the form will submit normally via Web3Forms
+          // Show a quick message that form is being submitted
+          setTimeout(() => {
+            alert(
+              "Thank you for showing interest in our UI/UX Design Training! Our team will review your application and payment proof, then contact you within 24 hours to confirm your enrollment and provide further details."
+            );
+            closeEnrollModal();
+          }, 500);
         });
 
       // Smooth scrolling for anchor links
@@ -1166,4 +1155,3 @@
     </script>
   </body>
 </html>
-`
