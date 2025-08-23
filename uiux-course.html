@@ -1,65 +1,29 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>UI/UX Design Training - TDE Officials</title>
-    <meta
-      name="description"
-      content="Master UI/UX Design in 40 Days - Start Earning in Dollars with TDE Officials"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a UI/UX Designer in 40 Days - TDE Officials</title>
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.png"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
     />
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/custom-animation.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
-    <link rel="stylesheet" href="assets/css/slick.css" />
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/spacing.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* Training specific styles */
-      .course-banner {
-        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-        padding: 60px 0;
-        position: relative;
-        overflow: hidden;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      .course-banner::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%2333cc79" fill-opacity="0.1" points="0,0 1000,300 1000,1000 0,700"/></svg>');
-        z-index: 1;
-      }
-
-      .course-banner .container {
-        position: relative;
-        z-index: 2;
-      }
-
-      /* Course sections styling */
-      .course-hero {
-        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-        padding: 80px 0;
-        color: white;
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        overflow-x: hidden;
       }
 
       .container {
@@ -68,723 +32,1033 @@
         padding: 0 20px;
       }
 
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-      }
-
-      .col-lg-8,
-      .col-lg-4 {
-        padding: 15px;
-      }
-
-      .col-lg-8 {
-        flex: 0 0 66.666667%;
-      }
-      .col-lg-4 {
-        flex: 0 0 33.333333%;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-      .mt-60 {
-        margin-top: 60px;
-      }
-
-      .course-hero-title {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 20px;
-        line-height: 1.2;
-      }
-
-      .course-hero-subtitle {
-        font-size: 1.2rem;
-        color: #e0e0e0;
-        margin-bottom: 20px;
-        line-height: 1.6;
-      }
-
-      .course-hero-tagline {
-        font-size: 1.1rem;
-        color: #33cc79;
-        margin-bottom: 40px;
-        font-weight: 500;
-      }
-
-      .course-cta-buttons {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-
-      .course-btn-secondary {
-        background: transparent;
-        color: #33cc79;
-        padding: 15px 30px;
-        border: 2px solid #33cc79;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-
-      .course-btn-secondary:hover {
-        background: #33cc79;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .instructor-card {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 30px;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      .instructor-image {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto 20px;
-        border: 4px solid #33cc79;
-      }
-
-      @media (max-width: 768px) {
-        .current-price {
-          font-size: 1.5rem;
-        }
-
-        .col-lg-8,
-        .col-lg-4 {
-          flex: 0 0 100%;
-        }
-      }
-
-      /* Course Button - Only "Enroll Now" */
-      .course-btn-primary {
-        background: linear-gradient(45deg, #33cc79, #28a768);
-        color: #fff;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(51, 204, 121, 0.3);
-        text-decoration: none;
-        display: inline-block;
-      }
-
-      .course-btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(51, 204, 121, 0.4);
-        color: #fff;
-        text-decoration: none;
-      }
-
-      /* Pricing Display Components */
-      .price-display {
-        background: rgba(51, 204, 121, 0.1);
-        border: 2px solid #33cc79;
-        padding: 20px;
-        border-radius: 12px;
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      .price-display-compact {
-        background: rgba(51, 204, 121, 0.1);
-        border: 1px solid #33cc79;
-        padding: 15px;
-        border-radius: 8px;
-        text-align: center;
-        margin: 15px 0;
-        display: inline-block;
-      }
-
-      .price-display-hero {
-        background: linear-gradient(
-          135deg,
-          rgba(51, 204, 121, 0.2),
-          rgba(40, 167, 104, 0.1)
-        );
-        border: 2px solid #33cc79;
-        padding: 25px;
-        border-radius: 15px;
-        text-align: center;
-        margin: 25px 0;
-        backdrop-filter: blur(10px);
-      }
-
-      .original-price {
-        font-size: 1.2rem;
-        color: #ff4757;
-        text-decoration: line-through;
-        margin-right: 10px;
-        opacity: 0.8;
-      }
-
-      .current-price {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #33cc79;
-        margin: 0 10px;
-      }
-
-      .discount-badge {
-        background: #ff4757;
+      /* Sticky Header with Countdown */
+      .sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #17f297;
         color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 0.9rem;
+        padding: 15px 0;
+        z-index: 1000;
+        box-shadow: 0 2px 20px rgba(23, 242, 151, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .offer-text {
         font-weight: 600;
-        display: inline-block;
-        margin-top: 10px;
-      }
-
-      .price-text {
-        font-size: 0.9rem;
-        color: #e0e0e0;
-        margin-top: 5px;
-      }
-
-      /* Countdown Styles */
-      .countdown-section {
-        background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-        padding: 20px 0;
-        color: #fff;
-        text-align: center;
+        font-size: 16px;
       }
 
       .countdown-timer {
         display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 20px;
-        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
       }
 
       .countdown-item {
         background: rgba(255, 255, 255, 0.2);
-        padding: 15px 20px;
-        border-radius: 10px;
-        min-width: 80px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        text-align: center;
+        min-width: 60px;
       }
 
       .countdown-number {
         display: block;
-        font-size: 2rem;
+        font-size: 18px;
         font-weight: 700;
         line-height: 1;
       }
 
       .countdown-label {
-        display: block;
-        font-size: 0.9rem;
-        margin-top: 5px;
+        font-size: 12px;
         opacity: 0.9;
       }
 
-      /* Features Section */
-      .course-features {
-        padding: 100px 0;
-        background: #f8f9fa;
-      }
-
-      .feature-item {
-        text-align: center;
-        padding: 40px 30px;
-        background: #fff;
-        border-radius: 15px;
-        margin-bottom: 30px;
+      .header-cta {
+        background: #ffac00;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
         transition: all 0.3s ease;
-        height: 100%;
-        border: 1px solid #e9ecef;
       }
 
-      .feature-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      .header-cta:hover {
+        background: #e09600;
+        transform: translateY(-2px);
       }
 
-      .feature-icon {
-        font-size: 3rem;
+      /* Main Content */
+      .main-content {
+        margin-top: 80px;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: #22282e;
+        color: white;
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="white" fill-opacity="0.05" points="0,200 300,0 1000,300 1000,1000 0,800"/></svg>');
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .hero-icon {
+        font-size: 48px;
         margin-bottom: 20px;
       }
 
-      .feature-item h4 {
-        color: #333;
-        margin-bottom: 15px;
-        font-weight: 600;
+      .hero-title {
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        line-height: 1.1;
       }
 
-      .feature-item p {
-        color: #666;
+      .hero-title .highlight {
+        color: #17f297;
+      }
+
+      .hero-features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 40px 0;
+      }
+
+      .feature-tag {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .feature-tag i {
+        color: #17f297;
+      }
+
+      .session-info {
+        margin: 40px 0;
+        font-size: 18px;
+      }
+
+      .price-info {
+        margin: 30px 0;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        opacity: 0.7;
+        font-size: 18px;
+        display: block;
+      }
+
+      .hero-cta {
+        background: #ffac00;
+        color: white;
+        padding: 18px 40px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        display: inline-block;
+        margin: 20px 0;
+        transition: all 0.3s ease;
+      }
+
+      .hero-cta:hover {
+        background: #e09600;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(255, 172, 0, 0.4);
+      }
+
+      .urgency-text {
+        margin-top: 20px;
+        font-size: 16px;
+        opacity: 0.9;
+      }
+
+      .disclaimer {
+        margin-top: 30px;
+        font-size: 14px;
+        opacity: 0.8;
+      }
+
+      /* Why Choose Section */
+      .why-choose {
+        background: white;
+        padding: 80px 0;
+      }
+
+      .section-title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #22282e;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 60px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+      }
+
+      .feature-card {
+        text-align: center;
+        padding: 40px 30px;
+        background: #f8f9fa;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        border-color: #17f297;
+        box-shadow: 0 20px 40px rgba(23, 242, 151, 0.1);
+      }
+
+      .feature-icon-box {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #17f297, #13c77d);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: white;
+      }
+
+      .feature-card h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #22282e;
+      }
+
+      .feature-card p {
+        color: #7f8c8d;
         line-height: 1.6;
       }
 
-      /* What You'll Learn Section */
-      .what-learn-section {
-        padding: 100px 0;
-        background: #fff;
+      /* Trainer Section */
+      .trainer-section {
+        background: #22282e;
+        color: white;
+        padding: 80px 0;
       }
 
-      .what-learn-section h2,
-      .what-learn-section p {
+      .trainer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .trainer-text h2 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      .trainer-quote {
+        background: #17f297;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.6;
+        position: relative;
+      }
+
+      .trainer-quote::before {
+        content: '"';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-size: 60px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .trainer-cta {
+        background: #ffa500;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .trainer-info {
         text-align: center;
       }
 
-      .learn-grid {
+      .trainer-avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #00d4aa, #ffa500);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        color: white;
+      }
+
+      .trainer-name {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .trainer-title {
+        font-size: 18px;
+        color: #00d4aa;
+      }
+
+      /* Curriculum Section */
+      .curriculum-section {
+        background: white;
+        padding: 80px 0;
+      }
+
+      .curriculum-subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 60px;
+      }
+
+      .curriculum-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 30px;
-        margin-top: 60px;
       }
 
-      .learn-item {
-        background: #f8f9fa;
+      .curriculum-card {
+        background: white;
+        border: 2px solid #e8f5e8;
+        border-radius: 20px;
         padding: 30px;
-        border-radius: 15px;
-        border-left: 5px solid #33cc79;
+        position: relative;
+        transition: all 0.3s ease;
       }
 
-      .learn-item h4 {
-        color: #33cc79;
-        margin-bottom: 15px;
+      .curriculum-card:hover {
+        border-color: #00d4aa;
+        transform: translateY(-5px);
+      }
+
+      .curriculum-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #00d4aa, #ffa500);
+        border-radius: 2px;
+      }
+
+      .curriculum-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .curriculum-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+      }
+
+      .design-fundamentals .curriculum-icon {
+        background: #ff6b6b;
+      }
+      .figma-mastery .curriculum-icon {
+        background: #4ecdc4;
+      }
+      .ux-research .curriculum-icon {
+        background: #45b7d1;
+      }
+      .ui-design .curriculum-icon {
+        background: #96ceb4;
+      }
+      .portfolio-building .curriculum-icon {
+        background: #ffeaa7;
+        color: #2d3436;
+      }
+      .freelancing-business .curriculum-icon {
+        background: #dda0dd;
+      }
+
+      .curriculum-card h3 {
+        font-size: 24px;
         font-weight: 600;
+        color: #2c3e50;
       }
 
-      .learn-item ul {
+      .curriculum-list {
         list-style: none;
-        padding: 0;
       }
 
-      .learn-item ul li {
+      .curriculum-list li {
         padding: 8px 0;
-        color: #555;
+        color: #7f8c8d;
         position: relative;
         padding-left: 25px;
       }
 
-      .learn-item ul li::before {
+      .curriculum-list li::before {
         content: "✓";
         position: absolute;
         left: 0;
-        color: #33cc79;
-        font-weight: bold;
+        color: #00d4aa;
+        font-weight: 600;
+      }
+
+      /* Target Audience Section */
+      .target-audience {
+        background: #f8f9fa;
+        padding: 80px 0;
+      }
+
+      .audience-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .audience-text h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 30px;
+      }
+
+      .audience-list {
+        list-style: none;
+      }
+
+      .audience-list li {
+        padding: 12px 0;
+        color: #2c3e50;
+        position: relative;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .audience-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #17f297;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .motivation-text {
+        background: #17f297;
+        color: white;
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .audience-images {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .audience-image {
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 48px;
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        background: #22282e;
+        color: white;
+        padding: 80px 0;
+      }
+
+      .faq-title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .faq-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .faq-question {
+        padding: 25px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .faq-answer {
+        padding: 0 25px 25px;
+        color: #bdc3c7;
+        line-height: 1.6;
+        display: none;
+      }
+
+      .faq-answer.active {
+        display: block;
+      }
+
+      .faq-icon {
+        transition: transform 0.3s ease;
+      }
+
+      .faq-icon.active {
+        transform: rotate(45deg);
+      }
+
+      /* Final CTA Section */
+      .final-cta {
+        background: white;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .final-cta-content {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .final-cta h2 {
+        font-size: 42px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .final-cta p {
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .trainer-final-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+        background: linear-gradient(135deg, #00d4aa, #ffa500);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        color: white;
+      }
+
+      .final-cta-btn {
+        background: #ffa500;
+        color: white;
+        padding: 20px 50px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        display: inline-block;
+        margin-bottom: 40px;
+        transition: all 0.3s ease;
+      }
+
+      .final-cta-btn:hover {
+        background: #ff8c00;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(255, 165, 0, 0.4);
       }
 
       /* WhatsApp CTA */
       .whatsapp-cta {
-        background: linear-gradient(45deg, #25d366, #128c7e);
-        padding: 80px 0;
-        color: #fff;
+        background: #17f297;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
       }
 
-      .whatsapp-cta h3 {
-        color: #fff;
+      .whatsapp-content h3 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
       }
 
-      .whatsapp-cta p {
-        color: #e8f5e8;
+      .whatsapp-content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        opacity: 0.9;
       }
 
       .whatsapp-btn {
-        display: inline-block;
-        background: #fff;
-        color: #25d366;
-        padding: 15px 30px;
-        border-radius: 50px;
+        background: #25d366;
+        color: white;
+        padding: 18px 40px;
+        border-radius: 30px;
         text-decoration: none;
         font-weight: 600;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
 
       .whatsapp-btn:hover {
+        background: #20c157;
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        color: #128c7e;
-        text-decoration: none;
       }
 
       /* WhatsApp Floating Button */
-      #whatsapp-floating-button {
+      .whatsapp-float {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
         background: #25d366;
-        padding: 15px;
         border-radius: 50%;
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 28px;
+        text-decoration: none;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        animation: pulse 2s infinite;
       }
 
-      #whatsapp-floating-button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+          box-shadow: 0 4px 30px rgba(37, 211, 102, 0.8);
+        }
+        100% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
       }
 
       /* Responsive Design */
-      @media (max-width: 1024px) {
-        .learn-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 25px;
-        }
-      }
-
       @media (max-width: 768px) {
-        .course-hero-title {
-          font-size: 2.5rem;
+        .hero-title {
+          font-size: 48px;
         }
 
-        .course-cta-buttons {
+        .section-title {
+          font-size: 36px;
+        }
+
+        .header-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .trainer-content,
+        .audience-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .curriculum-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-features {
           flex-direction: column;
           align-items: center;
-        }
-
-        .course-btn-primary,
-        .course-btn-secondary {
-          width: 100%;
-          text-align: center;
-          max-width: 300px;
-        }
-
-        .countdown-timer {
-          gap: 15px;
-        }
-
-        .countdown-item {
-          min-width: 70px;
-          padding: 10px 15px;
-        }
-
-        .countdown-number {
-          font-size: 1.5rem;
-        }
-
-        .course-modal-content {
-          width: 95%;
-          margin: 5% auto;
-          padding: 30px 20px;
-        }
-
-        .learn-grid {
-          grid-template-columns: 1fr;
-          gap: 20px;
         }
       }
     </style>
   </head>
-
   <body>
-    <!-- Countdown Section -->
-    <div class="countdown-section">
+    <!-- Sticky Header -->
+    <div class="sticky-header">
       <div class="container">
-        <h4 style="margin: 0; font-size: 1.2rem">
-          ⏳ Limited Time Offer - 30% Discount (Only 27 Seats Left)
-        </h4>
-        <div class="countdown-timer" id="countdown">
-          <div class="countdown-item">
-            <span class="countdown-number" id="days">00</span>
-            <span class="countdown-label">Days</span>
+        <div class="header-content">
+          <div class="offer-text">
+            <strong>30% OFF</strong> If You Enroll Before August 25th, 2025
           </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="hours">00</span>
-            <span class="countdown-label">Hours</span>
+
+          <div class="countdown-timer" id="countdown">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">03</span>
+              <span class="countdown-label">DAYS</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">07</span>
+              <span class="countdown-label">HRS</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">52</span>
+              <span class="countdown-label">MIN</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">40</span>
+              <span class="countdown-label">SEC</span>
+            </div>
           </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="minutes">00</span>
-            <span class="countdown-label">Minutes</span>
-          </div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="seconds">00</span>
-            <span class="countdown-label">Seconds</span>
-          </div>
+
+          <a
+            href="https://forms.gle/QVa23vtErwdGefvj7"
+            class="header-cta"
+            target="_blank"
+          >
+            Enroll Now PKR 4900
+          </a>
         </div>
       </div>
     </div>
 
-    <main>
-      <!-- WhatsApp Floating Button -->
-      <a
-        href="https://wa.me/+447774963563"
-        target="_blank"
-        id="whatsapp-floating-button"
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          alt="WhatsApp"
-          style="width: 50px; height: 50px"
-        />
-      </a>
-
+    <!-- Main Content -->
+    <div class="main-content">
       <!-- Hero Section -->
-      <section class="course-hero">
+      <section class="hero">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h1
-                class="course-hero-title wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".3s"
-              >
-                🎨 Become a UI/UX Designer in
-                <span style="color: #33cc79">40 Days</span>
-              </h1>
-              <p
-                class="course-hero-subtitle wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".5s"
-              >
-                Master Figma, build real-world projects, and launch your
-                freelance career with Abdul Muiz (Senior UI/UX Designer, 3+
-                years experience). Classes will be conducted online via Google
-                Meet.
+          <div class="hero-content">
+            <div class="hero-icon">🧠</div>
+            <h1 class="hero-title">
+              Become a UI/UX Designer<br />
+              in <span class="highlight">40 Days</span>
+            </h1>
+
+            <div class="hero-features">
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                Figma Basics to Advanced
+              </div>
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                UI Layouts & Components
+              </div>
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                UX Research & Wireframing
+              </div>
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                Prototyping & Animations
+              </div>
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                Real Client Projects
+              </div>
+              <div class="feature-tag">
+                <i class="fas fa-check"></i>
+                Portfolio & Freelance Tips
+              </div>
+            </div>
+
+            <div class="session-info">
+              <strong>Session Starting from 17th July, 2025</strong>
+            </div>
+
+            <div class="price-info">
+              <span class="original-price">Full Price 7000</span>
+            </div>
+
+            <a
+              href="https://forms.gle/QVa23vtErwdGefvj7"
+              class="hero-cta"
+              target="_blank"
+            >
+              Enroll Now PKR 4900
+            </a>
+
+            <div class="urgency-text">
+              <strong>27 Seats Left</strong> - Join Now & Save 30% before 25th
+              August, 2025
+            </div>
+
+            <div class="disclaimer">
+              No Degree Needed, No Prior Experience Needed, Just Results
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose This Training -->
+      <section class="why-choose">
+        <div class="container">
+          <h2 class="section-title">Why Choose This Training?</h2>
+          <p class="section-subtitle">
+            A beginner-to-expert UI/UX program designed to make you job-ready
+            and confident to work with international clients.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Industry Experience</h3>
+              <p>
+                Learn from Abdul Muiz with 3+ years of real industry experience
+                in UI/UX design.
               </p>
+            </div>
 
-              <!-- Pricing Display 1: Hero Section -->
-              <div class="price-display-hero">
-                <div>
-                  <span class="original-price">PKR 7,000</span>
-                  <span class="current-price">PKR 4,900</span>
-                </div>
-                <div class="discount-badge">Save 30% - Limited Time!</div>
-                <div class="price-text">Special launch offer ends soon</div>
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-rocket"></i>
               </div>
+              <h3>Job-Ready Skills</h3>
+              <p>
+                Build a professional portfolio with 5+ real projects that
+                impress clients and employers.
+              </p>
+            </div>
 
-              <div class="course-hero-tagline">
-                💡 Finally enjoy your life — you deserve it!
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-dollar-sign"></i>
               </div>
-              <div
-                class="course-cta-buttons wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".9s"
-              >
+              <h3>Freelance Ready</h3>
+              <p>
+                Master client acquisition, your services, and build a
+                sustainable freelance business.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <h3>Start Date: August 25th</h3>
+              <p>
+                Classes begin on August 25th Online sessions via Google Meet
+                with interactive learning.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h3>Practical Learning</h3>
+              <p>
+                Work on real client projects and case studies throughout the
+                training program.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Certificate</h3>
+              <p>
+                Get a professional certificate upon completion to boost your
+                credibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Your Trainer -->
+      <section class="trainer-section">
+        <div class="container">
+          <div class="trainer-content">
+            <div class="trainer-text">
+              <h2>Your Trainer</h2>
+
+              <div class="trainer-quote">
+                My passion is to help people gain real skills, achieve financial
+                freedom, and build a future they can be proud of. Whether
+                through freelancing or a full-time career, it's time to upskill
+                the youth for an independent and empowered future.
+                <br /><br />
                 <a
                   href="https://forms.gle/QVa23vtErwdGefvj7"
+                  class="trainer-cta"
                   target="_blank"
-                  class="course-btn-primary"
                 >
-                  Enroll Now
-                </a>
-                <a href="#curriculum" class="course-btn-secondary">
-                  View Training Outline
+                  Enroll Now PKR 4900
                 </a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div
-                class="instructor-card wow tpfadeRight"
-                data-wow-duration=".7s"
-                data-wow-delay="1s"
-              >
-                <img
-                  src="assets/img/team/team-4.jpg"
-                  alt="Abdul Muiz"
-                  class="instructor-image"
-                />
-                <h4 style="color: white; margin-bottom: 10px">Abdul Muiz</h4>
-                <p style="color: #33cc79; margin-bottom: 10px">
-                  Senior UI/UX Designer
-                </p>
-                <p style="color: #e0e0e0; font-size: 0.9rem">
-                  3+ Years Industry Experience
-                </p>
 
-                <!-- Pricing Display 2: Instructor Card -->
-                <div class="price-display-compact">
-                  <div>
-                    <span class="original-price" style="font-size: 1rem"
-                      >PKR 7,000</span
-                    >
-                    <span class="current-price" style="font-size: 1.5rem"
-                      >PKR 4,900</span
-                    >
-                  </div>
-                  <div class="discount-badge" style="font-size: 0.8rem">
-                    30% OFF
-                  </div>
-                </div>
-              </div>
+            <div class="trainer-info">
+              <div class="trainer-avatar">👨‍💻</div>
+              <div class="trainer-name">Abdul Muiz</div>
+              <div class="trainer-title">Senior UI/UX Designer</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Training Features -->
-      <section class="course-features">
+      <!-- What You'll Learn -->
+      <section class="curriculum-section">
         <div class="container">
-          <div class="row text-center mb-60">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="tp-section-title">Why Choose This Training?</h2>
-              <p class="tp-section-subtitle">
-                A beginner-to-expert UI/UX program designed to make you
-                job-ready and confident to work with international clients.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".3s"
-              >
-                <div class="feature-icon">💼</div>
-                <h4>Industry Experience</h4>
-                <p>
-                  Learn from Abdul Muiz with 3+ years of real industry
-                  experience in UI/UX design.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".5s"
-              >
-                <div class="feature-icon">🚀</div>
-                <h4>Job-Ready Skills</h4>
-                <p>
-                  Build a professional portfolio with 5+ real projects that
-                  impress clients and employers.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".7s"
-              >
-                <div class="feature-icon">💰</div>
-                <h4>Freelance Ready</h4>
-                <p>
-                  Learn how to find clients, price your services, and build a
-                  sustainable freelance business.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".9s"
-              >
-                <div class="feature-icon">🔥</div>
-                <h4>Start Date: August 25th</h4>
-                <p>
-                  Classes begin on August 25th. Online sessions via Google Meet
-                  with interactive learning.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay="1.1s"
-              >
-                <div class="feature-icon">🎯</div>
-                <h4>Practical Learning</h4>
-                <p>
-                  Work on real client projects and case studies throughout the
-                  training program.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="feature-item wow tpfadeUp"
-                data-wow-duration=".7s"
-                data-wow-delay="1.3s"
-              >
-                <div class="feature-icon">🏆</div>
-                <h4>Certificate</h4>
-                <p>
-                  Get a professional certificate upon completion to boost your
-                  credibility.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <h2 class="section-title">What You'll Learn</h2>
+          <p class="curriculum-subtitle">
+            A comprehensive curriculum designed to make you a professional UI/UX
+            designer
+          </p>
 
-      <!-- What You'll Learn Section -->
-      <section id="curriculum" class="what-learn-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-              <h2 class="tp-section-title">What You'll Learn</h2>
-              <p class="tp-section-subtitle">
-                A comprehensive curriculum designed to make you a professional
-                UI/UX designer
-              </p>
-            </div>
-          </div>
-          <div class="learn-grid">
-            <div class="learn-item">
-              <h4>🎨 Design Fundamentals</h4>
-              <ul>
+          <div class="curriculum-grid">
+            <div class="curriculum-card design-fundamentals">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">🎨</div>
+                <h3>Design Fundamentals</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>Color theory and psychology</li>
                 <li>Typography and visual hierarchy</li>
                 <li>Layout principles</li>
                 <li>Design systems</li>
               </ul>
             </div>
-            <div class="learn-item">
-              <h4>🔧 Figma Mastery</h4>
-              <ul>
+
+            <div class="curriculum-card figma-mastery">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">🔧</div>
+                <h3>Figma Mastery</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>Interface and tools</li>
                 <li>Components and variants</li>
                 <li>Prototyping and animations</li>
                 <li>Collaboration features</li>
               </ul>
             </div>
-            <div class="learn-item">
-              <h4>🧠 UX Research</h4>
-              <ul>
+
+            <div class="curriculum-card ux-research">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">🔍</div>
+                <h3>UX Research</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>User personas and journey mapping</li>
                 <li>Wireframing techniques</li>
                 <li>Usability testing</li>
                 <li>Information architecture</li>
               </ul>
             </div>
-            <div class="learn-item">
-              <h4>📱 UI Design</h4>
-              <ul>
+
+            <div class="curriculum-card ui-design">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">📱</div>
+                <h3>UI Design</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>Mobile app design</li>
                 <li>Web design principles</li>
                 <li>Responsive design</li>
                 <li>Micro-interactions</li>
               </ul>
             </div>
-            <div class="learn-item">
-              <h4>💼 Portfolio Building</h4>
-              <ul>
+
+            <div class="curriculum-card portfolio-building">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">💼</div>
+                <h3>Portfolio Building</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>5+ professional projects</li>
                 <li>Case study presentation</li>
                 <li>Portfolio website creation</li>
                 <li>Personal branding</li>
               </ul>
             </div>
-            <div class="learn-item">
-              <h4>💰 Freelancing Business</h4>
-              <ul>
+
+            <div class="curriculum-card freelancing-business">
+              <div class="curriculum-header">
+                <div class="curriculum-icon">💰</div>
+                <h3>Freelancing Business</h3>
+              </div>
+              <ul class="curriculum-list">
                 <li>Client acquisition strategies</li>
                 <li>Pricing and proposals</li>
                 <li>Project management</li>
@@ -792,201 +1066,216 @@
               </ul>
             </div>
           </div>
+        </div>
       </section>
-       <section style="background: #2d2d2d; padding: 60px 0; color: white">
-        <div class="container">
-          <div class="text-center">
-            <h2 style="margin-bottom: 30px; color: white">🚀 Launch Special Pricing</h2>
 
-            <!-- Pricing Display 3: Middle Section -->
-            <div class="price-display">
-              <div style="margin-bottom: 15px">
-                <span class="original-price">Original Price: PKR 7,000</span>
+      <!-- Target Audience -->
+      <section class="target-audience">
+        <div class="container">
+          <div class="audience-content">
+            <div class="audience-text">
+              <h2>THIS IS FOR YOU IF:</h2>
+
+              <ul class="audience-list">
+                <li>
+                  You are a student, freelancer, house wife, or beginner
+                  entrepreneur
+                </li>
+                <li>You want to earn online but don't know where to start</li>
+                <li>You want to learn high income skill</li>
+                <li>You have no big budget but have big ambition</li>
+                <li>
+                  You want real guidance from someone who's actually done it
+                </li>
+                <li>You want to earn "dollars" while staying at home</li>
+                <li>
+                  You're done wasting time on YouTube or with theory courses
+                </li>
+                <li>You want to have a high paying UI UX job</li>
+                <li>Stuck in your job, want a high-income side hustle</li>
+                <li>You want to build impressive portfolio</li>
+              </ul>
+
+              <div class="motivation-text">
+                If you're stuck, overwhelmed, or hungry to start big - this
+                training is built to power you up!
               </div>
-              <div style="margin-bottom: 15px">
-                <span class="current-price">Your Price: PKR 4,900</span>
-              </div>
-              <div class="discount-badge">
-                You Save PKR 2,100 (30% Discount)
-              </div>
-              <div class="price-text">Limited time offer - Don't miss out!</div>
             </div>
 
-            <p style="margin: 30px 0; font-size: 1.1rem; color: #e0e0e0">
-              Join hundreds of students who are already transforming their
-              careers
+            <div class="audience-images">
+              <div class="audience-image">👩‍💻</div>
+              <div class="audience-image">🎯</div>
+              <div class="audience-image">💡</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              Is this a recorded course?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              No. This is a live training program conducted online via Google
+              Meet. You'll be able to interact directly with the trainer and ask
+              questions during every class.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              Will I get a certificate?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Yes ✅ You'll receive a professional certificate upon successful
+              completion of the course and assignments.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              What tools will I learn?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              You'll master Figma (design, prototyping, components, style
+              guides), plus learn about UI/UX principles, wireframing,
+              responsive design, portfolio building, and freelancing strategies.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              Will I get practical experience on real-time projects?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Yes. You'll work on real-world projects (web & mobile screens,
+              landing pages, dashboards) and complete assignments that prepare
+              you for client work.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              Who will answer my questions during training?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              All sessions are interactive with live Q&A. Plus, you'll get
+              access to a WhatsApp support group where the trainer and team will
+              help you outside class hours.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              How do I apply?
+              <i class="fas fa-plus faq-icon"></i>
+            </div>
+            <div class="faq-answer active">
+              Click Enroll Now on our course page, fill out the form, and upload
+              your payment screenshot to secure your seat.
+              <br /><br />
+              <a
+                href="https://forms.gle/QVa23vtErwdGefvj7"
+                style="
+                  background: #ffac00;
+                  color: white;
+                  padding: 10px 20px;
+                  border-radius: 20px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  display: inline-block;
+                  margin-top: 15px;
+                "
+                target="_blank"
+              >
+                Enroll Now PKR 4900
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final-cta">
+        <div class="container">
+          <div class="final-cta-content">
+            <div class="trainer-final-image">👨‍💻</div>
+
+            <h2>Still Thinking About It?<br />That's the Problem</h2>
+
+            <p>
+              You've reached this far because you know something needs to
+              change. You can't need to figure everything out today. You just
+              need to take your first next step.
             </p>
 
-            <!-- Updated Button - Only "Enroll Now" -->
             <a
               href="https://forms.gle/QVa23vtErwdGefvj7"
+              class="final-cta-btn"
               target="_blank"
-              class="course-btn-primary"
             >
-              Enroll Now
+              Enroll Now PKR 4900
             </a>
           </div>
         </div>
       </section>
-      <!-- Have a Question Section -->
+
+      <!-- WhatsApp CTA -->
       <section class="whatsapp-cta">
-        <div class="container text-center">
-          <h3 style="margin-bottom: 20px">
-            📞 Have Questions? We're Here to Help!
-          </h3>
-          <p style="margin-bottom: 30px; font-size: 1.1rem; color: #e8f5e8">
-            Chat with us on WhatsApp for instant support and training details.
-          </p>
-          <a
-            href="https://wa.me/+447774963563"
-            class="whatsapp-btn"
-            target="_blank"
-          >
-            💬 Chat on WhatsApp
-          </a>
+        <div class="container">
+          <div class="whatsapp-content">
+            <h3>📞 Have Questions? We're Here to Help!</h3>
+            <p>
+              Chat with us on WhatsApp for instant support and training details.
+            </p>
+
+            <a
+              href="https://wa.me/+447774963563"
+              class="whatsapp-btn"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
       </section>
-    </main>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-      <div
-        class="tp-footer-area footer-bg pt-130"
-        data-background="assets/img/footer/footer-bg.jpg"
-      >
-        <div class="container">
-          <div class="row footer-row">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
-              <div class="tp-footer-widget z-index-3">
-                <div class="tp-footer-widget__list">
-                  <img
-                    src="assets/img/logo/logo-white.png"
-                    style="width: 150px"
-                    alt="Logo"
-                  />
-                  <ul class="footer-nav mt-4">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <!-- <li><a href="case-studies.html">Portfolio</a></li> -->
-                    <li><a href="price.html">Packages</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
-              <div class="tp-footer-widget z-index-3">
-                <div class="tp-footer-widget__title">
-                  <h4 class="tp-footer-title">Email Us</h4>
-                </div>
-                <div class="tp-footer-widget__list">
-                  <ul class="footer-contact">
-                    <li>
-                      <a href="mailto:thedigitalenvironmentofficials@gmail.com"
-                        >thedigitalenvironmentofficials@gmail.com</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
-              <div class="tp-footer-widget z-index-3">
-                <div class="tp-footer-widget__title">
-                  <h4 class="tp-footer-title">Contact Us</h4>
-                </div>
-                <div class="tp-footer-widget__list">
-                  <ul class="footer-contact">
-                    <li>
-                      Pakistan: <a href="tel:+923377236836">+92 337 723 6836</a>
-                    </li>
-                    <li>UK: <a href="tel:+447774963563">+44 7774 963563</a></li>
-                   
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
-              <div class="tp-footer-widget z-index-3">
-                <div class="tp-footer-widget__title">
-                  <h4 class="tp-footer-title">Our Addresses</h4>
-                </div>
-                <div class="tp-footer-widget__list">
-                  <ul class="footer-address">
-                    <li>
-                      Pakistan:
-                      <a
-                        href="https://maps.app.goo.gl/ButXoNK6bwQ4BxtUA"
-                        target="_blank"
-                        >E 11 Islamabad, Pakistan</a
-                      >
-                    </li>
-                    <li>
-                      UK:
-                      <a
-                        href="https://maps.app.goo.gl/8PYh54zUtbwm18v1A"
-                        target="_blank"
-                        >Deli-X 154-156 Deptford High Street London SE83PQ</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="copy-right-wrapper z-index-3">
-            <div class="row">
-              <div class="col-xl-6 col-lg-7 col-12">
-                <div class="copyright-left text-center text-lg-start">
-                  <p>©Copy Right @2024 All Rights Reserved - TDE</p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-5 col-12">
-                <div class="copyright-right-side text-center text-lg-end">
-                  <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="#">Sales and Refunds</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/waypoints.js"></script>
-    <script src="assets/js/bootstrap-bundle.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/range-slider.js"></script>
-    <script src="assets/js/magnific-popup.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/purecounter.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/isotope-pkgd.js"></script>
-    <script src="assets/js/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/+447774963563"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script>
       // Countdown Timer
       function updateCountdown() {
-        const endDate = new Date("2025-08-25T00:00:00").getTime();
+        const targetDate = new Date("August 25, 2025 23:59:59").getTime();
         const now = new Date().getTime();
-        const distance = endDate - now;
+        const difference = targetDate - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         document.getElementById("days").textContent = days
           .toString()
@@ -1001,15 +1290,38 @@
           .toString()
           .padStart(2, "0");
 
-        if (distance < 0) {
-          document.querySelector(".countdown-section").innerHTML =
-            '<div class="container"><h4>Training Started - Regular Price Now Applies</h4></div>';
+        if (difference < 0) {
+          document.getElementById("countdown").innerHTML =
+            '<div class="countdown-item"><span class="countdown-number">00</span><span class="countdown-label">EXPIRED</span></div>';
         }
       }
 
       // Update countdown every second
-      updateCountdown();
       setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial call
+
+      // FAQ Toggle Function
+      function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector(".faq-icon");
+
+        // Close all other FAQs
+        document.querySelectorAll(".faq-answer").forEach((faq) => {
+          if (faq !== answer) {
+            faq.classList.remove("active");
+          }
+        });
+
+        document.querySelectorAll(".faq-icon").forEach((faqIcon) => {
+          if (faqIcon !== icon) {
+            faqIcon.classList.remove("active");
+          }
+        });
+
+        // Toggle current FAQ
+        answer.classList.toggle("active");
+        icon.classList.toggle("active");
+      }
 
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -1023,6 +1335,16 @@
             });
           }
         });
+      });
+
+      // Add scroll effect to sticky header
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".sticky-header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
       });
     </script>
   </body>
