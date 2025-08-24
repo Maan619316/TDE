@@ -50,7 +50,7 @@
       .countdown {
         display: flex;
         gap: 20px;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(1, 34, 4, 0.5);
         padding: 10px 20px;
         border-radius: 15px;
       }
@@ -83,7 +83,8 @@
       }
 
       .header-cta:hover {
-        background: #e67700;
+        background: #22282e;
+        color: #00ff88;
         transform: translateY(-2px);
       }
 
@@ -168,14 +169,26 @@
       }
 
       .hero-cta:hover {
-        background: #e67700;
+        background: #00ff88;
+        color: #22282e;
         transform: translateY(-3px);
       }
 
       .urgency-text {
         font-size: 16px;
         margin-bottom: 20px;
-        color: #ff8800;
+        animation: blinkWhiteGreen 1.5s infinite;
+      }
+
+      @keyframes blinkWhiteGreen {
+        0%,
+        50% {
+          color: white;
+        }
+        51%,
+        100% {
+          color: #00ff88;
+        }
       }
 
       .disclaimer {
@@ -322,10 +335,10 @@
       }
 
       .trainer-cta:hover {
-        background: #e67700;
+        background: #22282e;
+        color: #00ff88;
         transform: translateY(-2px);
       }
-
       .trainer-info {
         text-align: center;
       }
@@ -474,7 +487,7 @@
       }
 
       .audience-intro {
-        color: #00ff88;
+        color: #8714f3;
         font-style: italic;
         margin-bottom: 20px;
       }
@@ -613,7 +626,8 @@
       }
 
       .faq-cta:hover {
-        background: #e67700;
+        background: #00ff88;
+        color: #22282e;
         transform: translateY(-2px);
       }
 
@@ -663,13 +677,14 @@
       }
 
       .final-cta-btn:hover {
-        background: #e67700;
+        background: #00ff88;
+        color: #22282e;
         transform: translateY(-3px);
       }
 
       /* WhatsApp CTA Section */
       .whatsapp-cta {
-        background: linear-gradient(135deg, #00ff88, #00d4aa);
+        background: linear-gradient(135deg, #02723e, #00d4aa);
         padding: 60px 0;
         text-align: center;
         color: white;
