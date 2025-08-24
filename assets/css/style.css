@@ -9274,7 +9274,7 @@ body:has(.sticky-course-banner) .scroll-top.open {
   right: 30px;
   width: 60px;
   height: 60px;
-  background: #25D366;
+  background: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -9307,12 +9307,12 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
     width: 55px;
     height: 55px;
   }
-  
+
   #whatsapp-floating-button img {
     width: 30px;
     height: 30px;
   }
-  
+
   /* When sticky banner is visible on mobile */
   body:has(.sticky-course-banner) #whatsapp-floating-button {
     bottom: 110px; /* More space on mobile as banner is taller */
@@ -9326,12 +9326,12 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
     bottom: 15px;
     right: 15px;
   }
-  
+
   #whatsapp-floating-button img {
     width: 28px;
     height: 28px;
   }
-  
+
   /* When sticky banner is visible on mobile */
   body:has(.sticky-course-banner) #whatsapp-floating-button {
     bottom: 120px;
@@ -9351,7 +9351,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
   .banner-visible .scroll-top.open {
     bottom: 110px !important;
   }
-  
+
   .banner-visible #whatsapp-floating-button {
     bottom: 110px !important;
   }
@@ -9451,7 +9451,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: #22282e;
   color: white;
   padding: 12px 20px;
   z-index: 1000;
@@ -9484,7 +9484,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 
 .banner-icon {
   font-size: 1.5rem;
-  color: #33cc79;
+  color: #17f297;
 }
 
 .banner-info h5 {
@@ -9501,23 +9501,23 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .banner-price {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 0 15px;
-        }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px;
+}
 
-        .banner-price-text {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #33cc79;
-        }
+.banner-price-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #17f297;
+}
 
-        .banner-original {
-            font-size: 0.9rem;
-            color: #ff4757;
-            text-decoration: line-through;
-        }
+.banner-original {
+  font-size: 0.9rem;
+  color: #ff4757;
+  text-decoration: line-through;
+}
 
 .banner-timer {
   display: flex;
@@ -9529,7 +9529,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 .banner-timer-item {
   background: rgba(255, 71, 87, 0.2);
   padding: 4px 8px;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
   min-width: 30px;
 }
@@ -9553,7 +9553,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 
 .banner-btn {
   padding: 8px 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.85rem;
@@ -9562,24 +9562,24 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .banner-btn-primary {
-  background: #33cc79;
+  background: #17f297;
   color: #000;
 }
 
 .banner-btn-primary:hover {
-  background: #2bb86a;
+  background: #17f297;
   transform: translateY(-1px);
   color: #000;
 }
 
 .banner-btn-secondary {
   background: transparent;
-  color: #33cc79;
-  border: 1px solid #33cc79;
+  color: #17f297;
+  border: 1px solid #17f297;
 }
 
 .banner-btn-secondary:hover {
-  background: #33cc79;
+  background: #17f297;
   color: #000;
 }
 
@@ -9724,7 +9724,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-content {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: #22282e;
   margin: 15% auto;
   padding: 25px;
   border-radius: 15px;
@@ -9765,7 +9765,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
   background: #ff4757;
   color: white;
   padding: 5px 15px;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 600;
   display: inline-block;
@@ -9788,41 +9788,41 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-price-box {
-            background: rgba(51, 204, 121, 0.1);
-            border: 1px solid #33cc79;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
+  background: rgba(51, 204, 121, 0.1);
+  border: 1px solid #17f297;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
 
-        .popup-price {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #33cc79;
-        }
+.popup-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #17f297;
+}
 
-        .popup-original-price {
-            font-size: 1rem;
-            color: #ff4757;
-            text-decoration: line-through;
-            margin-right: 8px;
-        }
+.popup-original-price {
+  font-size: 1rem;
+  color: #ff4757;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
 
-        .popup-discount {
-            background: #ff4757;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 5px;
-        }
+.popup-discount {
+  background: #ff4757;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 5px;
+}
 
 .popup-countdown {
   background: rgba(255, 71, 87, 0.1);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 15px;
   margin: 15px 0;
 }
 
@@ -9842,7 +9842,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 .popup-countdown-item {
   background: rgba(0, 0, 0, 0.3);
   padding: 5px 8px;
-  border-radius: 5px;
+  border-radius: 15px;
   min-width: 35px;
   text-align: center;
 }
@@ -9867,10 +9867,10 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-btn-primary {
-  background: #33cc79;
+  background: #17f297;
   color: #000;
   padding: 12px 25px;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
@@ -9880,17 +9880,17 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-btn-primary:hover {
-  background: #2bb86a;
+  background: #17f297;
   transform: translateY(-1px);
   color: #000;
 }
 
 .popup-btn-secondary {
   background: transparent;
-  color: #33cc79;
+  color: #17f297;
   padding: 12px 20px;
-  border: 1px solid #33cc79;
-  border-radius: 25px;
+  border: 1px solid #17f297;
+  border-radius: 15px;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
@@ -9900,7 +9900,7 @@ body:has(.sticky-course-banner) #whatsapp-floating-button {
 }
 
 .popup-btn-secondary:hover {
-  background: #33cc79;
+  background: #17f297;
   color: #000;
 }
 
